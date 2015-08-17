@@ -5,8 +5,8 @@
            :case [:Object, :Subject]
 	  :conjClass [:Prefix, :Suffix]
 	  :conjSubType [:AuxFay, :AuxHay, :AuxKay]
-	  :derivedStem [:Base, :Collaborative, :Cooperative, :M, :M1, :M2, :MS1, :MS2, :Reciprocal, :Reflexive, :S, :S1, :S2, :SM]
-	  :derivedStemAug [:Emphatic, :Simple]
+	  :derivedStem [:Base, :BaseIntns, :CausalIntransitive, :Causative, :Collaborative, :Cooperative, :M, :M1, :M2, :MS1, :MS2, :Passive, :Reciprocal, :Reflexive, :S, :S1, :S2, :SM]
+	  :derivedStemAug [:Intensive, :Intransitive, :Simple]
 	  :gender [:Common, :Fem, :Masc]
 	  :genHead [:H_Fem, :H_Masc]
 	  :morphClass [:COMPSEM, :DERVSTEMCAUS, :DERVSTEMCOLL, :DERVSTEMPASS, :DERVSTEMRECIP, :DERVSTEMREFL, :DERVSTEMVAR, :TENSESTEMPLUP1, :TENSESTEMPLUP2]
@@ -19,11 +19,7 @@
 	  :pos [:Pronoun, :Verb, :Var]
 	  :proClass [:Independent, :IndependentPossessive, :ObjectSuffix, :PossCop, :PossSuff]
 	  :rootClass [:CC, :CCC, :CCY, :CHC, :CaC, :CeC]
-	  :stemClass [:Base, :BaseIntns, :CausalIntransitive, :Causative, :Passive, :Reflexive]
-	  :stemFinal [:Common, :Consonant, :Vowel]
-	  :stemType [:Intensive, :Intransitive, :Simple]
-	  :tam [:Conditional, :ConditionalPerfect, :ConditionalPresent, :Future1, :Future2, :Future2Var, :Future3, :Imperative, :Jussive, :Optative, :Perfect, :PerfectDur, :PerfectRel, :Pluperfect, :Present, :PresentDur, :PresentRel]
-	  :type [:Imperfect, :Perfect]
+	  :tam [:Conditional, :ConditionalPerfect, :ConditionalPresent, :Future1, :Future2, :Future2Var, :Future3, :Imperfect, :Imperative, :Jussive, :Optative, :Perfect, :PerfectDur, :PerfectRel, :Pluperfect, :Present, :PresentDur, :PresentRel]
 	  }
 :pclass {
            :pngClass [:person :number :gender ]
@@ -176,7 +172,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Present}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "yí-, í’-ani"]
             [:Singular, :Masc, :Person2, "ē-tníy-a"]
             [:Singular, :Fem, :Person2, "é̄-tnī"]
@@ -193,7 +189,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Present}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "á-n-di"]
             [:Singular, :Masc, :Person2, "te-n-díy-a"]
             [:Singular, :Fem, :Person2, "te-n-dí̄"]
@@ -210,7 +206,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Present}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1,"ká̄-di"]
             [:Singular, :Masc, :Person2,"ki-d-díy-a"]
             [:Singular, :Fem, :Person2,"ki-d-dí"]
@@ -227,7 +223,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Present}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "a-hanrí̄û"]
             [:Singular, :Masc, :Person2, "hanrí̄w-a"]
             [:Singular, :Fem, :Person2, "hanrí̄w-i"]
@@ -244,7 +240,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Present}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "kā-harú̄"]
             [:Singular, :Masc, :Person2, "ki-t-háruw-a"]
             [:Singular, :Fem, :Person2, "ki-t-háruw-i"]
@@ -261,7 +257,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Perfect}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "a-ríib"]
             [:Singular, :Masc, :Person2, "tí-rib-a"]
             [:Singular, :Fem, :Person2, "tí-rib-i"]
@@ -279,7 +275,7 @@
 	    :polarity :NegativeEmphatic,
 	    :pos :Verb,
 	    :tam :Future1}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "derát a-ríib"]
             [:Singular, :Masc, :Person2, "derát tí-rib-a"]
             [:Singular, :Fem, :Person2, "derát tí-rib-i"]
@@ -296,7 +292,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :stemClass :Causative,
+	    :derivedStem :Causative,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Masc, :Singular, :Person2, "te-só̄-tī’-a"],
@@ -366,7 +362,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CCY,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person3, "sanfī"],
@@ -386,7 +382,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future2}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "dú̄r-e á-n-di"]
             [:Singular, :Masc, :Person2, "dú̄r-e te-n-díy-a"]
             [:Singular, :Fem, :Person2, "dú̄r-e te-n-dí̄"]
@@ -405,7 +401,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Future2}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "dú̄r-e ká̄-di"]
             [:Singular, :Masc, :Person2, "dú̄r-e ki-d-díy-a"]
             [:Singular, :Fem, :Person2, "dú̄r-e ki-d-dí"]
@@ -422,7 +418,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :rootClass :CCC,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "kī-seríd-na"],
@@ -594,7 +590,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CCY,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "e-ré̄uk-na"],
@@ -625,7 +621,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person2, "ki-d-dír-na"],
@@ -692,7 +688,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CCC,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "a-dambí̄l"],
@@ -711,7 +707,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Masc, :Singular, :Person2, "té-n-gīd-a"],
@@ -789,7 +785,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CCY,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "e-kŭé̄s-na"],
@@ -862,7 +858,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CHC,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Fem, :Singular, :Person2, "sánhīg-i"],
@@ -880,7 +876,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "a-m-bí̄s"],
@@ -970,7 +966,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CCC,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "e-sadíd-na"],
@@ -1023,7 +1019,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CHC,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person2, "tē-gŭ’ád-na"],
@@ -1101,7 +1097,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future1}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "derát yí-, í’-ani"]
             [:Singular, :Masc, :Person2, "derát ē-tníy-a"]
             [:Singular, :Fem, :Person2, "derát é̄-tnī"]
@@ -1141,7 +1137,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future2Var}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Plural, :Common, :Person1, "ne-fadíg ni-yád"]
             [:Plural, :Common, :Person2, "ne-fadíg ti-yád-na"]
             [:Plural, :Common, :Person3, "ne-fadíg i-yád-na"]]
@@ -1186,7 +1182,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CCC,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person2, "te-katíb-na"],
@@ -1244,7 +1240,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future2}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "e-dar á-n-di"]
             [:Singular, :Masc, :Person2, "e-dar te-n-díy-a"]
             [:Singular, :Fem, :Person2, "e-dar te-n-dí̄"]
@@ -1262,7 +1258,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Future2}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "e-dar ká̄-di"]
             [:Singular, :Masc, :Person2, "e-dar ki-d-díy-a"]
             [:Singular, :Fem, :Person2, "e-dar ki-d-dí"]
@@ -1292,7 +1288,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CCC,
-	    :stemClass :Causative,
+	    :derivedStem :Causative,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Fem, :Singular, :Person2, "te-s-fádīg-i"],
@@ -1311,7 +1307,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CCC,
-	    :stemClass :Passive,
+	    :derivedStem :Passive,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "a-stabí̄r"],
@@ -1388,7 +1384,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :stemClass :Passive,
+	    :derivedStem :Passive,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Masc, :Singular, :Person2, "té-t-rīm-a"],
@@ -1407,7 +1403,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :stemClass :Reflexive,
+	    :derivedStem :Reflexive,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "e-katí̄-na"],
@@ -1454,7 +1450,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future3}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "fedug a-hanrí̄û"]
             [:Singular, :Masc, :Person2, "fedug hanrí̄w-a"]
             [:Singular, :Fem, :Person2, "fedug hanrí̄w-i"]
@@ -1473,7 +1469,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Future3}
-    :terms [[:number, :person, :gender, :token]  ;; schema
+    :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "fedug kā-harú̄"]
             [:Singular, :Masc, :Person2, "fedug ki-t-háruw-a"]
             [:Singular, :Fem, :Person2, "fedug ki-t-háruw-i"]
@@ -1556,7 +1552,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :stemClass :CausalIntransitive,
+	    :derivedStem :CausalIntransitive,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person2, "te-s-‘amí̄-na"],
@@ -1575,7 +1571,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CHC,
-	    :stemClass :CausalIntransitive,
+	    :derivedStem :CausalIntransitive,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "e-s-b’aní̄-na"],
@@ -1661,7 +1657,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :stemClass :BaseIntns,
+	    :derivedStem :BaseIntns,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Masc, :Singular, :Person3, "é̄-tbī"],
@@ -1728,7 +1724,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :stemClass :Causative,
+	    :derivedStem :Causative,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Fem, :Singular, :Person2, "te-só̄-dīr-i"],
@@ -1761,7 +1757,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CCC,
-	    :stemClass :Passive,
+	    :derivedStem :Passive,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Masc, :Singular, :Person2, "té-stī’-a"],
@@ -1822,7 +1818,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Pluperfect}
-    :terms [[:derivedStem, :stemType, :token, :lexeme]  ;; schema
+    :terms [[:derivedStem, :derivedStemAug, :token, :lexeme]  ;; schema
 	    [:S, :Intransitive, "e-s-‘im", :am],
 	    [:Base, :Intensive, "i-dedír", :dedir],
 	    [:Base, :Intensive, "i-fdāg", :fedig],
@@ -1913,7 +1909,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :rootClass :CCC,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Fem, :Singular, :Person2, "ki-t-ké̄tib-i"],
@@ -1926,16 +1922,14 @@
 	    [:Masc, :Singular, :Person3, "kí̄-ktib"]]
     }
     {:label "beja_Re-VSuffDervStemForm"
-    :note "Reinisch1893 #325. [MAKE BETTER SYSTEMATIZATION OF RʔS ANALYSIS OF DERIVED
-            STEMS.]In Reinisch,causPass is termed causatives reflexive;some instances of passCaus
-            are termed reciprocum;passCaus2 is causatives reciprocum."
+    :note "Reinisch1893 #325. [MAKE BETTER SYSTEMATIZATION OF RʔS ANALYSIS OF DERIVED STEMS.] In Reinisch,causPass is termed causatives reflexive;some instances of passCaus are termed reciprocum;passCaus2 is causatives reciprocum."
     :common {:conjClass :Suffix,
 	    :morphClass :DERVSTEMVAR,
 	    :pdgmType :DervStemForm,
 	    :pos :Verb}
     :terms [[:derivedStem, :derivedStemAug, :lexeme, :token]  ;; schema
 	    [:SM, :Simple, :bal, "bal-am-s"],
-	    [:Base, :Emphatic, :dab, "dadab"],
+	    [:Base, :Intensive, :dab, "dadab"],
 	    [:MS1, :Simple, :yewas, "yewās-is-am"],
 	    [:Base, :Simple, :dab, "dab"],
 	    [:S2, :Simple, :abab, "abāb-is"],
@@ -1943,20 +1937,20 @@
 	    [:SM, :Simple, :men, "menī-m-s"],
 	    [:M1, :Simple, :kiloy, "kilōy-im"],
 	    [:Base, :Simple, :abab, "abāb"],
-	    [:Base, :Emphatic, :guH, "gugu’"],
+	    [:Base, :Intensive, :guH, "gugu’"],
 	    [:S1, :Simple, :dab, "dab-s"],
 	    [:S1, :Simple, :gas, "gas-is"],
 	    [:MS2, :Simple, :abab, "abāb-s-is-am"],
 	    [:M2, :Simple, :men, "menī-m-am"],
 	    [:Reflexive, :Simple, :baski, "baskī-t"],
-	    [:S1, :Emphatic, :dib, "didib-s"],
+	    [:S1, :Intensive, :dib, "didib-s"],
 	    [:MS1, :Simple, :gig, "gīg-s-am"],
-	    [:S1, :Emphatic, :dab, "dadab-s"],
+	    [:S1, :Intensive, :dab, "dadab-s"],
 	    [:S1, :Simple, :abab, "abāb-s"],
 	    [:MS1, :Simple, :yewas, "yewās-is-am"],
-	    [:S2, :Emphatic, :dib, "didib-s-is"],
-	    [:Base, :Emphatic, :dib, "didib"],
-	    [:S2, :Emphatic, :dab, "dadab-s-is̄"],
+	    [:S2, :Intensive, :dib, "didib-s-is"],
+	    [:Base, :Intensive, :dib, "didib"],
+	    [:S2, :Intensive, :dab, "dadab-s-is̄"],
 	    [:S2, :Simple, :dab, "dab-s-is"],
 	    [:MS1, :Simple, :abab, "abāb-s-am"],
 	    [:M1, :Simple, :abab, "abāb-am"]]
@@ -2043,7 +2037,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :stemClass :Reflexive,
+	    :derivedStem :Reflexive,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Masc, :Singular, :Person3, "e-kté̄n"],
@@ -2097,7 +2091,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :stemClass :CausalIntransitive,
+	    :derivedStem :CausalIntransitive,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Fem, :Singular, :Person3, "te-só̄-dhi"],
@@ -2116,7 +2110,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CHC,
-	    :stemClass :Base,
+	    :derivedStem :Base,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "a-khanhí̄n"],
@@ -2266,49 +2260,49 @@
     :common {:morpheme :PRO,
 	    :proClass :PossSuff,
 	    :pos :Pronoun}
-    :terms [[:genHead, :gender, :numHead, :number, :person, :stemFinal, :token]  ;; schema
-	    [:H_Fem, :Common, :H_Plural, :Plural, :Person3, :Common, "-tá̄sna"],
-	    [:H_Masc, :Fem, :H_Plural, :Singular, :Person2, :Vowel, "-yá̄ki"],
-	    [:H_Fem, :Common, :H_Singular, :Singular, :Person1, :Common, "-tū"],
-	    [:H_Fem, :Common, :H_Plural, :Plural, :Person1, :Common, "-tān"],
-	    [:H_Masc, :Common, :H_Singular, :Plural, :Person3, :Vowel, "-yú̄sna"],
-	    [:H_Masc, :Common, :H_Singular, :Plural, :Person1, :Consonant, "-ūn"],
-	    [:H_Masc, :Common, :H_Plural, :Plural, :Person3, :Consonant, "-á̄sna"],
-	    [:H_Fem, :Common, :H_Singular, :Plural, :Person1, :Common, "-tūn"],
-	    [:H_Masc, :Fem, :H_Singular, :Singular, :Person2, :Vowel, "-yuki / -yūk"],
-	    [:H_Masc, :Common, :H_Singular, :Plural, :Person1, :Vowel, "-yūn"],
-	    [:H_Masc, :Fem, :H_Plural, :Singular, :Person2, :Consonant, "-á̄ki"],
-	    [:H_Fem, :Masc, :H_Plural, :Singular, :Person2, :Common, "-tá̄ka"],
-	    [:H_Fem, :Common, :H_Plural, :Singular, :Person1, :Common, "-tā"],
-	    [:H_Fem, :Masc, :H_Singular, :Singular, :Person2, :Common, "-tú̄ka / -tūk"],
-	    [:H_Masc, :Common, :H_Singular, :Plural, :Person3, :Consonant, "-ú̄sna"],
-	    [:H_Masc, :Common, :H_Plural, :Singular, :Person3, :Consonant, "-ās"],
-	    [:H_Masc, :Fem, :H_Singular, :Singular, :Person2, :Consonant, "-ú̄ki / -ūk"],
-	    [:H_Fem, :Common, :H_Singular, :Plural, :Person3, :Common, "-tú̄sna"],
-	    [:H_Masc, :Masc, :H_Singular, :Singular, :Person2, :Consonant, "-ú̄ka / -ūk"],
-	    [:H_Masc, :Common, :H_Singular, :Plural, :Person2, :Consonant, "-ú̄kna"],
-	    [:H_Masc, :Common, :H_Singular, :Singular, :Person1, :Consonant, "-ū"],
-	    [:H_Masc, :Common, :H_Plural, :Plural, :Person2, :Consonant, "-á̄kna"],
-	    [:H_Masc, :Common, :H_Singular, :Plural, :Person2, :Vowel, "-yú̄kna"],
-	    [:H_Masc, :Masc, :H_Singular, :Singular, :Person2, :Vowel, "-yú̄ka / -yūk"],
-	    [:H_Masc, :Common, :H_Plural, :Plural, :Person1, :Consonant, "-ān"],
-	    [:H_Masc, :Common, :H_Singular, :Singular, :Person1, :Vowel, "-yū"],
-	    [:H_Fem, :Common, :H_Singular, :Plural, :Person2, :Common, "-tú̄kna"],
-	    [:H_Masc, :Common, :H_Singular, :Singular, :Person3, :Consonant, "-ūs"],
-	    [:H_Fem, :Common, :H_Plural, :Singular, :Person3, :Common, "-tās"],
-	    [:H_Masc, :Common, :H_Plural, :Singular, :Person3, :Vowel, "-yās"],
-	    [:H_Masc, :Common, :H_Singular, :Singular, :Person3, :Vowel, "-yūs"],
-	    [:H_Masc, :Common, :H_Plural, :Singular, :Person1, :Consonant, "-ā"],
-	    [:H_Masc, :Common, :H_Plural, :Plural, :Person3, :Vowel, "-yá̄sna"],
-	    [:H_Fem, :Fem, :H_Singular, :Singular, :Person2, :Common, "-tú̄ki / -tūk"],
-	    [:H_Masc, :Common, :H_Plural, :Singular, :Person1, :Vowel, "-yā"],
-	    [:H_Masc, :Common, :H_Plural, :Plural, :Person2, :Vowel, "-yá̄kna"],
-	    [:H_Fem, :Common, :H_Singular, :Singular, :Person3, :Common, "-tūs"],
-	    [:H_Masc, :Masc, :H_Plural, :Singular, :Person2, :Consonant, "-á̄ka"],
-	    [:H_Fem, :Common, :H_Plural, :Plural, :Person2, :Common, "-tá̄kna"],
-	    [:H_Fem, :Fem, :H_Plural, :Singular, :Person2, :Common, "-tá̄ki"],
-	    [:H_Masc, :Masc, :H_Plural, :Singular, :Person2, :Vowel, "-yá̄ka"],
-	    [:H_Masc, :Common, :H_Plural, :Plural, :Person1, :Vowel, "-yān"]]
+    :terms [[:genHead, :gender, :numHead, :number, :person, :stemClass, :token]  ;; schema
+	    [:H_Fem, :Common, :H_Plural, :Plural, :Person3, :_NA, "-tá̄sna"],
+	    [:H_Masc, :Fem, :H_Plural, :Singular, :Person2, :V_final, "-yá̄ki"],
+	    [:H_Fem, :Common, :H_Singular, :Singular, :Person1, :_NA, "-tū"],
+	    [:H_Fem, :Common, :H_Plural, :Plural, :Person1, :_NA, "-tān"],
+	    [:H_Masc, :Common, :H_Singular, :Plural, :Person3, :V_final, "-yú̄sna"],
+	    [:H_Masc, :Common, :H_Singular, :Plural, :Person1, :C_final, "-ūn"],
+	    [:H_Masc, :Common, :H_Plural, :Plural, :Person3, :C_final, "-á̄sna"],
+	    [:H_Fem, :Common, :H_Singular, :Plural, :Person1, :_NA, "-tūn"],
+	    [:H_Masc, :Fem, :H_Singular, :Singular, :Person2, :V_final, "-yuki / -yūk"],
+	    [:H_Masc, :Common, :H_Singular, :Plural, :Person1, :V_final, "-yūn"],
+	    [:H_Masc, :Fem, :H_Plural, :Singular, :Person2, :C_final, "-á̄ki"],
+	    [:H_Fem, :Masc, :H_Plural, :Singular, :Person2, :_NA, "-tá̄ka"],
+	    [:H_Fem, :Common, :H_Plural, :Singular, :Person1, :_NA, "-tā"],
+	    [:H_Fem, :Masc, :H_Singular, :Singular, :Person2, :_NA, "-tú̄ka / -tūk"],
+	    [:H_Masc, :Common, :H_Singular, :Plural, :Person3, :C_final, "-ú̄sna"],
+	    [:H_Masc, :Common, :H_Plural, :Singular, :Person3, :C_final, "-ās"],
+	    [:H_Masc, :Fem, :H_Singular, :Singular, :Person2, :C_final, "-ú̄ki / -ūk"],
+	    [:H_Fem, :Common, :H_Singular, :Plural, :Person3, :_NA, "-tú̄sna"],
+	    [:H_Masc, :Masc, :H_Singular, :Singular, :Person2, :C_final, "-ú̄ka / -ūk"],
+	    [:H_Masc, :Common, :H_Singular, :Plural, :Person2, :C_final, "-ú̄kna"],
+	    [:H_Masc, :Common, :H_Singular, :Singular, :Person1, :C_final, "-ū"],
+	    [:H_Masc, :Common, :H_Plural, :Plural, :Person2, :C_final, "-á̄kna"],
+	    [:H_Masc, :Common, :H_Singular, :Plural, :Person2, :V_final, "-yú̄kna"],
+	    [:H_Masc, :Masc, :H_Singular, :Singular, :Person2, :V_final, "-yú̄ka / -yūk"],
+	    [:H_Masc, :Common, :H_Plural, :Plural, :Person1, :C_final, "-ān"],
+	    [:H_Masc, :Common, :H_Singular, :Singular, :Person1, :V_final, "-yū"],
+	    [:H_Fem, :Common, :H_Singular, :Plural, :Person2, :_NA, "-tú̄kna"],
+	    [:H_Masc, :Common, :H_Singular, :Singular, :Person3, :C_final, "-ūs"],
+	    [:H_Fem, :Common, :H_Plural, :Singular, :Person3, :_NA, "-tās"],
+	    [:H_Masc, :Common, :H_Plural, :Singular, :Person3, :V_final, "-yās"],
+	    [:H_Masc, :Common, :H_Singular, :Singular, :Person3, :V_final, "-yūs"],
+	    [:H_Masc, :Common, :H_Plural, :Singular, :Person1, :C_final, "-ā"],
+	    [:H_Masc, :Common, :H_Plural, :Plural, :Person3, :V_final, "-yá̄sna"],
+	    [:H_Fem, :Fem, :H_Singular, :Singular, :Person2, :_NA, "-tú̄ki / -tūk"],
+	    [:H_Masc, :Common, :H_Plural, :Singular, :Person1, :V_final, "-yā"],
+	    [:H_Masc, :Common, :H_Plural, :Plural, :Person2, :V_final, "-yá̄kna"],
+	    [:H_Fem, :Common, :H_Singular, :Singular, :Person3, :_NA, "-tūs"],
+	    [:H_Masc, :Masc, :H_Plural, :Singular, :Person2, :C_final, "-á̄ka"],
+	    [:H_Fem, :Common, :H_Plural, :Plural, :Person2, :_NA, "-tá̄kna"],
+	    [:H_Fem, :Fem, :H_Plural, :Singular, :Person2, :_NA, "-tá̄ki"],
+	    [:H_Masc, :Masc, :H_Plural, :Singular, :Person2, :V_final, "-yá̄ka"],
+	    [:H_Masc, :Common, :H_Plural, :Plural, :Person1, :V_final, "-yān"]]
     }
     {:label "beja_Re-PInd"
     :note "Reinisch1893 #157,159"
