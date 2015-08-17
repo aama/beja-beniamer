@@ -64,6 +64,7 @@
   :dedir {:gloss "[x]", :lemma "[y]", }
   :delib {:gloss "kaufen", :lemma "se-dalib"}
   :derir {:gloss "", :lemma "derār #215"}
+  :di {:gloss "say", :lemma "", }
   :dib {:gloss "", :lemma "didib-s"}
   :dif {:gloss "farben", :lemma "šō-dif"}
   :dih {:gloss "", :lemma "e-sú-dih", }
@@ -98,6 +99,7 @@
   :hakaf {:gloss "[x]", :lemma "[y]", }
   :hanig {:gloss "sich biegen", :lemma "halāg"}
   :harid {:gloss "slaughter", :lemma "harid", }
+  :har {:gloss "want", :lemma ""}
   :hay {:gloss "be", :lemma "hāy", :pdgmSubType :Auxiliary}
   :herid {:gloss "[x]", :lemma "[y]", }
   :is {:gloss "verlassen", :lemma "mō-‘ās"}
@@ -131,7 +133,7 @@
   :ram {:gloss "(pass) sich anschliessen jemandem", :lemma "rām", }
   :regig {:gloss "vertreiben", :lemma "m-ragāg"}
   :rekwi {:gloss "fear s.o.", :lemma "rekwi", }
-  :rib {:gloss "abweisen", :lemma "mō-rerāb"}
+  :rib {:gloss "not want, refuse", :lemma "mō-rerāb"}
   :saH {:gloss "(pass) sich setzen", :lemma "sāʔ", }
   :san {:gloss "[x]", :lemma "[y]", }
   :sawi {:gloss "mischen", :lemma "mē-swāy"}
@@ -159,50 +161,133 @@
   :tʔaʔ {:gloss "beat", :lemma "tʔaʔ", }
   :tʔāb {:gloss "prügeln", :lemma "tʔāb", }
   :yak {:gloss "", :lemma "yak-am"}
+  :yi {:gloss "be", :lemma "yi'- ~ i'-"}
   :yewas {:gloss "", :lemma "yewās-is-am"}
   :šedid {:gloss "abschalen", :lemma "ši-šadid"}
   :abik {:gloss "festhalten", :lemma "s-‘abik"}
   :afid {:gloss "niesen", :lemma "š-‘afid"}
 }
+
 :lxterms #{
-    {:label "beja_Re-VPrefCCNegPerfectAuxHay"
-    :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
-            hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
+    {:label "beja_Re-VPrefAffPres-yi"
+    :note "Reinisch1893 #249;used as aux with Future1"
     :common {:conjClass :Prefix,
-	    :lexeme :hay,
-	    :pdgmSubType :AuxHay,
+	    :lexeme :yi,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "yí-, í’-ani"]
+            [:Singular, :Masc, :Person2, "ē-tníy-a"]
+            [:Singular, :Fem, :Person2, "é̄-tnī"]
+            [:Singular, :Masc, :Person3, "é̄-nī"]
+            [:Singular, :Fem, :Person3, "é̄-tnī"]
+            [:Plural, :Common, :Person1, "ē-né̄y"]
+            [:Plural, :Common, :Person2, "ē-té̄na"]
+            [:Plural, :Common, :Person3, "é̄-na, I’-é̄n"]]
+     }
+    {:label "beja_Re-VPrefAffPres-di"
+    :note "Reinisch1893 #252;used as aux with Future2"
+    :common {:conjClass :Prefix,
+	    :lexeme :di,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "á-n-di"]
+            [:Singular, :Masc, :Person2, "te-n-díy-a"]
+            [:Singular, :Fem, :Person2, "te-n-dí̄"]
+            [:Singular, :Masc, :Person3, "é-n-di"]
+            [:Singular, :Fem, :Person3, "té-n-di"]
+            [:Plural, :Common, :Person1, "ni-yád"]
+            [:Plural, :Common, :Person2, "ti-yád-na"]
+            [:Plural, :Common, :Person3, "i-yád-na"]]
+     }
+    {:label "beja_Re-VPrefAffPres-yi"
+    :note "Reinisch1893 #249;used as aux with Future1"
+    :common {:conjClass :Prefix,
+	    :lexeme :yi,
 	    :polarity :Negative,
 	    :pos :Verb,
-	    :rootClass :CC,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1,"ká̄-di"]
+            [:Singular, :Masc, :Person2,"ki-d-díy-a"]
+            [:Singular, :Fem, :Person2,"ki-d-dí"]
+            [:Singular, :Masc, :Person3,"kī-di"]
+            [:Singular, :Fem, :Person3,"kí̄-d-di"]
+            [:Plural, :Common, :Person1,"kí-n-di"]
+            [:Plural, :Common, :Person2,"ki-d-dí̄-na"]
+            [:Plural, :Common, :Person3,"kī-dí̄-na"]]
+     }
+    {:label "beja_Re-VPrefAffPres-har"
+    :note "Reinisch 1893 #253 Used as aux in Future3"
+    :common {:conjClass :Pref,
+	    :lexeme :har,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "a-hanrí̄û"]
+            [:Singular, :Masc, :Person2, "hanrí̄w-a"]
+            [:Singular, :Fem, :Person2, "hanrí̄w-i"]
+            [:Singular, :Masc, :Person3, "hanrí̄û"]
+            [:Singular, :Fem, :Person3, "hanrí̄u"]
+            [:Plural, :Common, :Person1, "ne-harú̄"]
+            [:Plural, :Common, :Person2, "te-harú̄-na"]
+            [:Plural, :Common, :Person3, "e-harú̄-na"]]
+     }
+    {:label "beja_Re-VPrefAffPres-har"
+    :note "Reinisch 1893 #253 Used as aux in Future3"
+    :common {:conjClass :Pref,
+	    :lexeme :har,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "kā-harú̄"]
+            [:Singular, :Masc, :Person2, "ki-t-háruw-a"]
+            [:Singular, :Fem, :Person2, "ki-t-háruw-i"]
+            [:Singular, :Masc, :Person3, "kī-harú̄"]
+            [:Singular, :Fem, :Person3, "ki-t-harú̄"]
+            [:Plural, :Common, :Person1, "ki-n-harú̄"]
+            [:Plural, :Common, :Person2, "ki-t-harú̄-na"]
+            [:Plural, :Common, :Person3, "ki-harú̄-na"]]
+     }
+    {:label "beja_Re-VPrefNegPerf-rib"
+    :note "Reinisch1893 #249-51. Future tenses are formed with main verb participle derát-,fídgat- plus a conjugated auxiliary yi- aff,ka+are/rib neg.; [here with rib]"
+    :common {:conjClass :Prefix,
+	    :lexeme :rib,
+	    :polarity :Negative,
+	    :pos :Verb,
 	    :tam :Perfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "hāy-á̄ba"],
-	    [:Common, :Plural, :Person2, "hāy-á̄ba"],
-	    [:Masc, :Singular, :Person3, "hāy-á̄b"],
-	    [:Fem, :Singular, :Person3, "hāy-á̄t"],
-	    [:Fem, :Singular, :Person2, "hāy-á̄t"],
-	    [:Common, :Plural, :Person3, "hāy-á̄ba"],
-	    [:Masc, :Singular, :Person2, "hāy-á̄b"],
-	    [:Common, :Singular, :Person1, "hāy-á̄b"]]
-    }
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "a-ríib"]
+            [:Singular, :Masc, :Person2, "tí-rib-a"]
+            [:Singular, :Fem, :Person2, "tí-rib-i"]
+            [:Singular, :Masc, :Person3, "e-ríb"]
+            [:Singular, :Fem, :Person3, "te-ríb"]
+            [:Plural, :Common, :Person1, "ne-ríb"]
+            [:Plural, :Common, :Person2, "te-ríb-na"]
+            [:Plural, :Common, :Person3, "e-ríib-na"]]
+     }
     {:label "beja_Re-VPrefNegFuture1-dir"
-    :note "Reinisch1893 #249-51. Future tenses are formed with main verb participle
-            derát-,fídgat- plus a conjugated auxiliary yi- aff,ka+are/rib neg."
+    :note "Reinisch1893 #249-51. Future tenses are formed with main verb participle derát-,fídgat- plus a conjugated auxiliary yi- aff,ka+are/rib neg.; [here with rib"
     :common {:conjClass :Prefix,
 	    :lexeme :dir,
 	    :pdgmType :Compound,
-	    :polarity :Negative,
+	    :polarity :NegativeEmphatic,
 	    :pos :Verb,
 	    :tam :Future1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "derát-"],
-	    [:Common, :Singular, :Person1, "derát-"],
-	    [:Masc, :Singular, :Person2, "derát-"],
-	    [:Masc, :Singular, :Person3, "derát-"],
-	    [:Common, :Plural, :Person3, "derát-"],
-	    [:Fem, :Singular, :Person3, "derát-"],
-	    [:Fem, :Singular, :Person2, "derát-"],
-	    [:Common, :Plural, :Person2, "derát-"]]
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "derát a-ríib"]
+            [:Singular, :Masc, :Person2, "derát tí-rib-a"]
+            [:Singular, :Fem, :Person2, "derát tí-rib-i"]
+            [:Singular, :Masc, :Person3, "derát e-ríb"]
+            [:Singular, :Fem, :Person3, "derát te-ríb"]
+            [:Plural, :Common, :Person1, "derát ne-ríb"]
+            [:Plural, :Common, :Person2, "derát te-ríb-na"]
+            [:Plural, :Common, :Person3, "derát e-ríib-na"]]
     }
     {:label "beja_Re-VPrefCCAffPresent-tʔaʔ"
     :note "Reinisch1893 #240"
@@ -251,20 +336,21 @@
 	    :rootClass :CC,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Fem, :Singular, :Person2, "kíttay"],
+	    [:Common, :Singular, :Person1, "ká̄-kē"],
 	    [:Masc, :Singular, :Person2, "kítta"],
+	    [:Fem, :Singular, :Person2, "kíttay"],
+	    [:Masc, :Singular, :Person3, "kí̄kē"]
 	    [:Fem, :Singular, :Person3, "kítte"],
-	    [:Common, :Plural, :Person3, "kí̄kēna"],
 	    [:Common, :Plural, :Person1, "kínke"],
 	    [:Common, :Plural, :Person2, "kíttēna"],
-	    [:Common, :Singular, :Person1, "ká̄-kē"],
-	    [:Masc, :Singular, :Person3, "kí̄kē"]]
+	    [:Common, :Plural, :Person3, "kí̄kēna"]]
     }
     {:label "beja_Re-VSuffNegFuture3-dur"
     :note "Reinisch1893 #326-340"
     :common {:conjClass :Suffix,
 	    :lexeme :dur,
 	    :number :Singular,
+	    :pdgmType :Compound,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Future3}
@@ -296,37 +382,40 @@
     :common {:conjClass :Suffix,
 	    :lexeme :dur,
 	    :number :Singular,
+	    :pdgmType :Compound,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future2}
-    :terms [[:gender, :person, :token]  ;; schema
-	    [:Fem, :Person3, "dú̄r-e"],
-	    [:Fem, :Person2, "dú̄r-e"],
-	    [:Common, :Person1, "dú̄r-e"],
-	    [:Masc, :Person2, "dú̄r-e"],
-	    [:Masc, :Person3, "dú̄r-e"]]
-    }
-    {:label "beja_Re-VPrefNegCCPresent-auxFay"
-    :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
-            hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-    :common {:conjClass :Prefix,
-	    :conjSubType :AuxFay,
-	    :lexeme :fay,
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "dú̄r-e á-n-di"]
+            [:Singular, :Masc, :Person2, "dú̄r-e te-n-díy-a"]
+            [:Singular, :Fem, :Person2, "dú̄r-e te-n-dí̄"]
+            [:Singular, :Masc, :Person3, "dú̄r-e é-n-di"]
+            [:Singular, :Fem, :Person3, "dú̄r-e té-n-di"]
+            [:Plural, :Common, :Person1, "dú̄r-e ni-yád"]
+            [:Plural, :Common, :Person2, "dú̄r-e ti-yád-na"]
+            [:Plural, :Common, :Person3, "dú̄r-e i-yád-na"]]
+     }
+    {:label "beja_Re-VSuffNegFuture2-dur"
+    :note "Reinisch1893 #326-340"
+    :common {:conjClass :Suffix,
+	    :lexeme :dur,
+	    :number :Singular,
+	    :pdgmType :Compound,
 	    :polarity :Negative,
 	    :pos :Verb,
-	    :rootClass :CC,
-	    :tam :Present}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "ki-t-fé̄-na"],
-	    [:Masc, :Singular, :Person3, "ki-t-fá̄y"],
-	    [:Fem, :Singular, :Person2, "ki-t-fá̄y-a"],
-	    [:Common, :Plural, :Person2, "ki-n-fá̄y"],
-	    [:Common, :Plural, :Person1, "ki-t-fá̄y"],
-	    [:Common, :Singular, :Person1, "token"],
-	    [:Masc, :Singular, :Person2, "kā-fá̄y"],
-	    [:Fem, :Singular, :Person3, "kī-fá̄y"]]
-    }
-    {:label "beja_Re-VPrefCCCNegPresent-serid"
+	    :tam :Future2}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "dú̄r-e ká̄-di"]
+            [:Singular, :Masc, :Person2, "dú̄r-e ki-d-díy-a"]
+            [:Singular, :Fem, :Person2, "dú̄r-e ki-d-dí"]
+            [:Singular, :Masc, :Person3, "dú̄r-e kī-di"]
+            [:Singular, :Fem, :Person3, "dú̄r-e kí̄-d-di"]
+            [:Plural, :Common, :Person1, "dú̄r-e kí-n-di"]
+            [:Plural, :Common, :Person2, "dú̄r-e ki-d-dí̄-na"]
+            [:Plural, :Common, :Person3, "dú̄r-e kī-dí̄-na"]]
+     }
+   {:label "beja_Re-VPrefCCCNegPresent-serid"
     :note "Reinisch1893 #246"
     :common {:conjClass :Prefix,
 	    :lexeme :serid,
@@ -408,21 +497,6 @@
 	    [:Fem, :Person2, "dú̄r-tay hāy-á-t kí-t-tay"],
 	    [:Common, :Person1, "dú̄r-an hāy-á̄-b ká̄ke"],
 	    [:Masc, :Person2, "dú̄r-ta hāy-á̄-b kí-t-a"]]
-    }
-    {:label "beja_Re-VSuffNegFuture2-dur"
-    :note "Reinisch1893 #326-340"
-    :common {:conjClass :Suffix,
-	    :lexeme :dur,
-	    :number :Singular,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Future2}
-    :terms [[:gender, :person, :token]  ;; schema
-	    [:Masc, :Person2, "dú̄r-e"],
-	    [:Common, :Person1, "dú̄r-e"],
-	    [:Fem, :Person2, "dú̄r-e"],
-	    [:Fem, :Person3, "dú̄r-e"],
-	    [:Masc, :Person3, "dú̄r-e"]]
     }
     {:label "beja_Re-VPrefNegImprtv-harid"
     :note "Reinisch1893 #255-256"
@@ -564,43 +638,52 @@
 	    [:Common, :Singular, :Person1, "ká̄-dir"]]
     }
     {:label "beja_Re-VPrefCCCAffPerfectCompSem"
-    :note "Reinisch1893 #225"
+    :note "Reinisch1893 #225; compares Arb, Heb imperfect with Beniamer perfect"
     :common {:conjClass :Prefix,
 	    :morphClass :COMPSEM,
 	    :pdgmType :CompSem,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CCC,
+	    :tam :Imperfect}
+    :terms [[:gender, :lexeme, :lang, :number, :person, :token]  ;; schema
+	    [:Fem, :ktbHeb, :Hebrew, :Singular, :Person3, "ti-któb"],
+	    [:Fem, :ktbArb, :Arabic, :Singular, :Person2, "ta-ktub-ina"],
+	    [:Common, :ktbArb, :Arabic, :Singular, :Person1, "á-ktub-u"],
+	    [:Fem, :ktbHeb, :Hebrew, :Plural, :Person3, "ti-któb-na"],
+	    [:Masc, :ktbArb, :Arabic, :Singular, :Person3, "yá-ktub-u"],
+	    [:Fem, :ktbHeb, :Hebrew, :Plural, :Person2, "ti-któb-na"],
+	    [:Masc, :ktbHeb, :Hebrew, :Plural, :Person2, "ti-kteb-ú"],
+	    [:Fem, :ktbHeb, :Hebrew, :Singular, :Person2, "ti-kteb-i"],
+	    [:Common, :ktbHeb, :Hebrew, :Singular, :Person1, "a-któb"],
+	    [:Masc, :ktbHeb, :Hebrew, :Plural, :Person3, "yi-kteb-ú"],
+	    [:Fem, :ktbArb, :Arabic, :Plural, :Person2, "ta-ktúb-na"],
+	    [:Fem, :ktbArb, :Arabic, :Singular, :Person3, "tá-ktub-u"],
+	    [:Masc, :ktbHeb, :Hebrew, :Singular, :Person2, "ti-któb"],
+	    [:Masc, :ktbHeb, :Hebrew, :Singular, :Person3, "yi-któb"],
+	    [:Common, :ktbArb, :Arabic, :Plural, :Person1, "ná-ktub-u"],
+	    [:Common, :ktbHeb, :Hebrew, :Plural, :Person1, "ni-któb"],
+	    [:Masc, :ktbArb, :Arabic, :Plural, :Person3, "ya-ktub-úna"],
+	    [:Fem, :ktbArb, :Arabic, :Plural, :Person3, "ta-ktúb-na"],
+	    [:Masc, :ktbArb, :Arabic, :Plural, :Person2, "ta-ktub-úna"],
+	    [:Masc, :ktbArb, :Arabic, :Singular, :Person2, "tá-ktub-u"]]
+    }
+    {:label "beja_Re-VPrefCCCAffPerfectCompSem"
+    :note "Reinisch1893 #225; compares Arb, Heb imperfect with Beniamer perfect"
+    :common {:conjClass :Prefix,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :rootClass :CCC,
 	    :tam :Perfect}
-    :terms [[:gender, :lexeme, :lang, :number, :person, :token, :type]  ;; schema
-	    [:Fem, :ktbHeb, :Hebrew, :Singular, :Person3, "ti-któb", :Imperfect],
-	    [:Fem, :ktbArb, :Arabic, :Singular, :Person2, "ta-ktub-ina", :Imperfect],
-	    [:Common, :ktbArb, :Arabic, :Singular, :Person1, "á-ktub-u", :Imperfect],
-	    [:Common, :ketib, :Beja-beniamer, :Singular, :Person1, "ní-ktib", :Perfect],
-	    [:Fem, :ktbHeb, :Hebrew, :Plural, :Person3, "ti-któb-na", :Imperfect],
-	    [:Masc, :ktbArb, :Arabic, :Singular, :Person3, "yá-ktub-u", :Imperfect],
-	    [:Fem, :ktbHeb, :Hebrew, :Plural, :Person2, "ti-któb-na", :Imperfect],
-	    [:Masc, :ktbHeb, :Hebrew, :Plural, :Person2, "ti-kteb-ú", :Imperfect],
-	    [:Masc, :ketib, :Beja-beniamer, :Singular, :Person3, "í-ktib", :Perfect],
-	    [:Fem, :ktbHeb, :Hebrew, :Singular, :Person2, "ti-kteb-i", :Imperfect],
-	    [:Common, :ktbHeb, :Hebrew, :Singular, :Person1, "a-któb", :Imperfect],
-	    [:Fem, :ketib, :Beja-beniamer, :Singular, :Person2, "tí-ktib-i", :Perfect],
-	    [:Masc, :ktbHeb, :Hebrew, :Plural, :Person3, "yi-kteb-ú", :Imperfect],
-	    [:Common, :ketib, :Beja-beniamer, :Singular, :Person2, "te-ktíb-na", :Perfect],
-	    [:Fem, :ktbArb, :Arabic, :Plural, :Person2, "ta-ktúb-na", :Imperfect],
-	    [:Fem, :ktbArb, :Arabic, :Singular, :Person3, "tá-ktub-u", :Imperfect],
-	    [:Fem, :ketib, :Beja-beniamer, :Singular, :Person3, "tí-ktib", :Perfect],
-	    [:Masc, :ktbHeb, :Hebrew, :Singular, :Person2, "ti-któb", :Imperfect],
-	    [:Masc, :ktbHeb, :Hebrew, :Singular, :Person3, "yi-któb", :Imperfect],
-	    [:Common, :ktbArb, :Arabic, :Plural, :Person1, "ná-ktub-u", :Imperfect],
-	    [:Common, :ktbHeb, :Hebrew, :Plural, :Person1, "ni-któb", :Imperfect],
-	    [:Common, :ketib, :Beja-beniamer, :Singular, :Person1, "á-ktib", :Perfect],
-	    [:Common, :ketib, :Beja-beniamer, :Singular, :Person3, "e-ktíb-na", :Perfect],
-	    [:Masc, :ketib, :Beja-beniamer, :Singular, :Person2, "tí-ktib-a", :Perfect],
-	    [:Masc, :ktbArb, :Arabic, :Plural, :Person3, "ya-ktub-úna", :Imperfect],
-	    [:Fem, :ktbArb, :Arabic, :Plural, :Person3, "ta-ktúb-na", :Imperfect],
-	    [:Masc, :ktbArb, :Arabic, :Plural, :Person2, "ta-ktub-úna", :Imperfect],
-	    [:Masc, :ktbArb, :Arabic, :Singular, :Person2, "tá-ktub-u", :Imperfect]]
+    :terms [[:gender, :lexeme, :number, :person, :token]  ;; schema
+	    [:Common, :ketib, :Plural, :Person1, "ní-ktib"],
+	    [:Masc, :ketib, :Singular, :Person3, "í-ktib"],
+	    [:Fem, :ketib, :Singular, :Person2, "tí-ktib-i"],
+	    [:Common, :ketib, :Singular, :Person2, "te-ktíb-na"],
+	    [:Fem, :ketib, :Singular, :Person3, "tí-ktib"],
+	    [:Common, :ketib, :Singular, :Person1, "á-ktib"],
+	    [:Common, :ketib, :Singular, :Person3, "e-ktíb-na"],
+	    [:Masc, :ketib, :Singular, :Person2, "tí-ktib-a"]]
     }
     {:label "beja_Re-VPrefCCCAffPresent-debil"
     :note "Reinisch1893 #236"
@@ -642,26 +725,6 @@
 	    [:Common, :Plural2, :Person1, "ne-gé̄d"],
 	    [:Common, :Plural, :Person3, "ē-gíd-na"],
 	    [:Masc, :Singular, :Person3, "e-n-gīd"]]
-    }
-    {:label "beja_Re-VPrefCCAffPerfectAuxHay"
-    :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
-            hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-    :common {:conjClass :Prefix,
-	    :lexeme :hay,
-	    :pdgmSubType :AuxHay,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :rootClass :CC,
-	    :tam :Perfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person2, "ti-híy-a"],
-	    [:Fem, :Singular, :Person2, "tí̄-hī"],
-	    [:Masc, :Singular, :Person3, "í̄-hi"],
-	    [:Fem, :Singular, :Person3, "tí̄-hi"],
-	    [:Common, :Plural, :Person2, "ti-hí̄-na"],
-	    [:Common, :Plural, :Person3, "i-hí̄-na"],
-	    [:Common, :Plural, :Person1, "ní̄-hi"],
-	    [:Common, :Singular, :Person1, "i-hē"]]
     }
     {:label "beja_Re-VPrefAffOptative-fedig"
     :note "Reinisch1893 #263-264"
@@ -758,26 +821,6 @@
 	    [:Fem, :Plural, :Person3, "bā-fadīg-á̄-t-a"],
 	    [:Masc, :Plural, :Person3, "bā-fadīg-á̄-b-a"]]
     }
-    {:label "beja_Re-VPrefNegCCPerfect-auxHay"
-    :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
-            hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-    :common {:conjClass :Prefix,
-	    :conjSubType :AuxHay,
-	    :lexeme :hay,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :rootClass :CC,
-	    :tam :Perfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "hāy-á̄ba"],
-	    [:Common, :Singular, :Person1, "hāy-á̄b"],
-	    [:Masc, :Singular, :Person3, "hāy-á̄b"],
-	    [:Fem, :Singular, :Person3, "hāy-á̄t"],
-	    [:Common, :Plural, :Person1, "hāy-á̄ba"],
-	    [:Fem, :Singular, :Person2, "hāy-á̄t"],
-	    [:Common, :Plural, :Person2, "hāy-á̄ba"],
-	    [:Masc, :Singular, :Person2, "hāy-á̄b"]]
-    }
     {:label "beja_Re-VSuffNegPresentRel-dur"
     :note "Reinisch1893 #326-340"
     :common {:conjClass :Suffix,
@@ -829,26 +872,6 @@
 	    [:Common, :Plural, :Person3, "ē-shág-na"],
 	    [:Common, :Plural, :Person2, "tē-shág-na"],
 	    [:Common, :Singular, :Person1, "a-sanhí̄g"]]
-    }
-    {:label "beja_Re-VPrefCCNegPresentAuxHay"
-    :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
-            hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-    :common {:conjClass :Prefix,
-	    :lexeme :hay,
-	    :pdgmSubType :AuxHay,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :rootClass :CC,
-	    :tam :Present}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "ki-n-há̄y"],
-	    [:Masc, :Singular, :Person3, "kī-há̄y"],
-	    [:Fem, :Singular, :Person2, "ki-t-há̄y"],
-	    [:Common, :Plural, :Person3, "kī-hé̄-na"],
-	    [:Fem, :Singular, :Person3, "ki-t-há̄y"],
-	    [:Common, :Plural, :Person2, "ki-t-hé̄-na"],
-	    [:Masc, :Singular, :Person2, "ki-t-há̄y-a"],
-	    [:Common, :Singular, :Person1, "kā-há̄y"]]
     }
     {:label "beja_Re-VPrefCCAffPresent-bis"
     :note "Reinisch1893 #235"
@@ -1022,14 +1045,14 @@
 	    :rootClass :CC,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Fem, :Singular, :Person3, "é̄-fe"],
-	    [:Common, :Singular, :Person1, "token"],
-	    [:Common, :Plural, :Person2, "né̄-fe"],
-	    [:Fem, :Singular, :Person2, "te-fá̄y-a"],
-	    [:Masc, :Singular, :Person3, "te-fá̄y"],
-	    [:Common, :Plural, :Person1, "té̄-fe"],
+	    [:Masc, :Singular, :Person3, "é̄-fe"],
+	    [:Common, :Plural, :Person3, "e-fé̄-na"],
+	    [:Common, :Plural, :Person1, "né̄-fe"],
+	    [:Masc, :Singular, :Person2, "te-fá̄y-a"],
+	    [:Fem, :Singular, :Person2, "te-fá̄y"],
+	    [:Fem, :Singular, :Person3, "té̄-fe"],
 	    [:Common, :Plural, :Person3, "te-fé̄-na"],
-	    [:Masc, :Singular, :Person2, "í̄-fe"]]
+	    [:Common, :Singular, :Person1, "í̄-fe"]]
     }
     {:label "beja_Re-VSuffNegJussive-dur"
     :note "Reinisch1893 #326-340"
@@ -1078,16 +1101,16 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person2, "derát-"],
-	    [:Common, :Plural, :Person3, "derát-"],
-	    [:Common, :Plural, :Person2, "derát-"],
-	    [:Common, :Plural, :Person1, "derát-"],
-	    [:Common, :Singular, :Person1, "derát-"],
-	    [:Fem, :Singular, :Person2, "derát-"],
-	    [:Fem, :Singular, :Person3, "derát-"],
-	    [:Masc, :Singular, :Person3, "derát-"]]
-    }
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "derát yí-, í’-ani"]
+            [:Singular, :Masc, :Person2, "derát ē-tníy-a"]
+            [:Singular, :Fem, :Person2, "derát é̄-tnī"]
+            [:Singular, :Masc, :Person3, "derát é̄-nī"]
+            [:Singular, :Fem, :Person3, "derát é̄-tnī"]
+            [:Plural, :Common, :Person1, "derát ē-né̄y"]
+            [:Plural, :Common, :Person2, "derát ē-té̄na"]
+            [:Plural, :Common, :Person3, "derát é̄-na, I’-é̄n"]]
+     }
     {:label "beja_Re-VPrefNegCCPresent-auxHay"
     :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
             hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
@@ -1109,9 +1132,7 @@
 	    [:Masc, :Singular, :Person2, "ki-t-há̄y-a"]]
     }
     {:label "beja_Re-VPrefAffFuture2Var-dir"
-    :note "Reinisch1893 #252. Future2 formed with inflected aux di say and 1st pers. sg.
-            plusperf of main verb,lit. I will kill they say. (Future2Var allows 1st pers pl plusperf
-            of main verb for plural subjects.)"
+    :note "Reinisch1893 #252. Future2 formed with inflected aux di say and 1st pers. sg. plusperf of main verb,lit. I will kill they say. (Future2Var allows 1st pers pl plusperf of main verb for plural subjects.)[Not clear from #252 of Future2Var also possible in plural.]"
     :common {:conjClass :Prefix,
 	    :gender :Common,
 	    :lexeme :dir,
@@ -1120,10 +1141,10 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future2Var}
-    :terms [[:person, :token]  ;; schema
-	    [:Person2, "ne-fadíg"],
-	    [:Person3, "ne-fadíg"],
-	    [:Person1, "ne-fadíg"]]
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Plural, :Common, :Person1, "ne-fadíg ni-yád"]
+            [:Plural, :Common, :Person2, "ne-fadíg ti-yád-na"]
+            [:Plural, :Common, :Person3, "ne-fadíg i-yád-na"]]
     }
     {:label "beja_Re-VPrefAffCCPresent-auxHay"
     :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
@@ -1144,26 +1165,6 @@
 	    [:Fem, :Singular, :Person2, "te-há̄y"],
 	    [:Common, :Plural, :Person2, "te-hé-̄na"],
 	    [:Masc, :Singular, :Person3, "é̄-he"]]
-    }
-    {:label "beja_Re-VPrefCCAffPresentAuxFay"
-    :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
-            hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-    :common {:conjClass :Prefix,
-	    :lexeme :fay,
-	    :pdgmSubType :AuxFay,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :rootClass :CC,
-	    :tam :Present}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "né̄-fe"],
-	    [:Common, :Singular, :Person1, "token"],
-	    [:Common, :Plural, :Person1, "té̄-fe"],
-	    [:Fem, :Singular, :Person3, "é̄-fe"],
-	    [:Masc, :Singular, :Person3, "te-fá̄y"],
-	    [:Common, :Plural, :Person3, "te-fé̄-na"],
-	    [:Masc, :Singular, :Person2, "í̄-fe"],
-	    [:Fem, :Singular, :Person2, "te-fá̄y-a"]]
     }
     {:label "beja_Re-VPrefAffImprtv-kehan"
     :note "Reinisch1893 #255-256"
@@ -1235,45 +1236,42 @@
 	    [:gŭhar, "stelen lassen", "s-ughar", "Common"],
 	    [:tib, "fuller lassen", "sō-tib", "Common"]]
     }
-    {:label "beja_Re-VPrefCCNegPerfectAuxKay"
-    :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
-            hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-    :common {:conjClass :Prefix,
-	    :lexeme :kay,
-	    :pdgmSubType :AuxKay,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :rootClass :CC,
-	    :tam :Perfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Fem, :Singular, :Person2, "kíttay"],
-	    [:Masc, :Singular, :Person3, "kí̄kē"],
-	    [:Common, :Plural, :Person3, "kí̄kēna"],
-	    [:Common, :Plural, :Person1, "kínke"],
-	    [:Masc, :Singular, :Person2, "kítta"],
-	    [:Common, :Plural, :Person2, "kíttēna"],
-	    [:Fem, :Singular, :Person3, "kítte"],
-	    [:Common, :Singular, :Person1, "ká̄-kē"]]
-    }
     {:label "beja_Re-VPrefAffFuture2-dir"
-    :note "Reinisch1893 #252. Future2 formed with inflected aux di say and 1st pers. sg.
-            plusperf of main verb,lit. I will kill"
+    :note "Reinisch1893 #252. Future2 formed with inflected aux di say and 1st pers. sg. plusperf of main verb,lit. I will kill"
     :common {:conjClass :Prefix,
 	    :lexeme :dir,
 	    :pdgmType :Compound,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person2, "e-dār"],
-	    [:Masc, :Singular, :Person3, "e-dār"],
-	    [:Fem, :Singular, :Person3, "e-dār"],
-	    [:Common, :Plural, :Person1, "e-dār"],
-	    [:Masc, :Singular, :Person2, "e-dār"],
-	    [:Common, :Singular, :Person1, "e-dār"],
-	    [:Common, :Plural, :Person3, "e-dār"],
-	    [:Fem, :Singular, :Person2, "e-dār"]]
-    }
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "e-dar á-n-di"]
+            [:Singular, :Masc, :Person2, "e-dar te-n-díy-a"]
+            [:Singular, :Fem, :Person2, "e-dar te-n-dí̄"]
+            [:Singular, :Masc, :Person3, "e-dar é-n-di"]
+            [:Singular, :Fem, :Person3, "e-dar té-n-di"]
+            [:Plural, :Common, :Person1, "e-dar ni-yád"]
+            [:Plural, :Common, :Person2, "e-dar ti-yád-na"]
+            [:Plural, :Common, :Person3, "e-dar i-yád-na"]]
+     }
+    {:label "beja_Re-VPrefNegFuture2-dir"
+    :note "Reinisch1893 #252. Future2 formed with inflected aux di say and 1st pers. sg. plusperf of main verb,lit. I will kill they say. (Future2Var allows 1st pers pl plusperf of main verb for plural subjects.)"
+    :common {:conjClass :Prefix,
+	    :lexeme :dir,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Future2}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "e-dar ká̄-di"]
+            [:Singular, :Masc, :Person2, "e-dar ki-d-díy-a"]
+            [:Singular, :Fem, :Person2, "e-dar ki-d-dí"]
+            [:Singular, :Masc, :Person3, "e-dar kī-di"]
+            [:Singular, :Fem, :Person3, "e-dar kí̄-d-di"]
+            [:Plural, :Common, :Person1, "e-dar kí-n-di"]
+            [:Plural, :Common, :Person2, "e-dar ki-d-dí̄-na"]
+            [:Plural, :Common, :Person3, "e-dar kī-dí̄-na"]]
+     }
     {:label "beja_Re-VPrefNegImprtv-seni"
     :note "Reinisch1893 #255-256"
     :common {:conjClass :Prefix,
@@ -1306,26 +1304,6 @@
 	    [:Common, :Plural, :Person3, "e-s-fadíg-na"],
 	    [:Common, :Singular, :Person1, "a-s-fadí̄g"]]
     }
-    {:label "beja_Re-VPrefNegFuture2-dir"
-    :note "Reinisch1893 #252. Future2 formed with inflected aux di say and 1st pers. sg.
-            plusperf of main verb,lit. I will kill they say. (Future2Var allows 1st pers pl plusperf
-            of main verb for plural subjects.)"
-    :common {:conjClass :Prefix,
-	    :lexeme :dir,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Future2}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "e-dār"],
-	    [:Masc, :Singular, :Person2, "e-dār"],
-	    [:Common, :Singular, :Person1, "e-dār"],
-	    [:Common, :Plural, :Person3, "e-dār"],
-	    [:Common, :Plural, :Person2, "e-dār"],
-	    [:Common, :Plural, :Person1, "e-dār"],
-	    [:Fem, :Singular, :Person2, "e-dār"],
-	    [:Fem, :Singular, :Person3, "e-dār"]]
-    }
     {:label "beja_Re-VPrefCCCAffPresent-sebir"
     :note "Reinisch1893 #241"
     :common {:conjClass :Prefix,
@@ -1350,6 +1328,7 @@
     :common {:conjClass :Suffix,
 	    :lexeme :dur,
 	    :number :Singular,
+	    :pdgmType :Compound,
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :tam :Future1}
@@ -1357,25 +1336,6 @@
 	    [:Masc, :Person2, "dú̄r-at kāré̄-ta"],
 	    [:Fem, :Person2, "dú̄r-at karé̄-tay"],
 	    [:Common, :Person1, "dú̄r-at kāré̄-an"]]
-    }
-    {:label "beja_Re-VPrefNegEmphFuture1-dir"
-    :note "Reinisch1893 #249-51. Future tenses are formed with main verb participle
-            derát-,fídgat- plus a conjugated auxiliary yi- aff,ka+are/rib neg."
-    :common {:conjClass :Prefix,
-	    :lexeme :dir,
-	    :pdgmType :Compound,
-	    :polarity :NegativeEmphatic,
-	    :pos :Verb,
-	    :tam :Future1}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person3, "derát-"],
-	    [:Masc, :Singular, :Person2, "derát-"],
-	    [:Common, :Singular, :Person1, "derát-"],
-	    [:Fem, :Singular, :Person2, "derát-"],
-	    [:Fem, :Singular, :Person3, "derát-"],
-	    [:Common, :Plural, :Person1, "derát-"],
-	    [:Common, :Plural, :Person2, "derát-"],
-	    [:Masc, :Singular, :Person3, "derát-"]]
     }
     {:label "beja_Re-VSuffAffPresentRel-dur"
     :note "Reinisch1893 #326-340"
@@ -1412,6 +1372,7 @@
     :common {:conjClass :Suffix,
 	    :lexeme :dur,
 	    :number :Singular,
+	    :pdgmType :Compound,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future3}
@@ -1493,16 +1454,35 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future3}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "fedug"],
-	    [:Fem, :Singular, :Person3, "fedug"],
-	    [:Common, :Plural, :Person3, "fedug"],
-	    [:Common, :Plural, :Person1, "fedug"],
-	    [:Masc, :Singular, :Person2, "fedug"],
-	    [:Common, :Singular, :Person1, "fedug"],
-	    [:Common, :Plural, :Person2, "fedug"],
-	    [:Fem, :Singular, :Person2, "fedug"]]
-    }
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "fedug a-hanrí̄û"]
+            [:Singular, :Masc, :Person2, "fedug hanrí̄w-a"]
+            [:Singular, :Fem, :Person2, "fedug hanrí̄w-i"]
+            [:Singular, :Masc, :Person3, "fedug hanrí̄û"]
+            [:Singular, :Fem, :Person3, "fedug hanrí̄u"]
+            [:Plural, :Common, :Person1, "fedug ne-harú̄"]
+            [:Plural, :Common, :Person2, "fedug te-harú̄-na"]
+            [:Plural, :Common, :Person3, "fedug e-harú̄-na"]]
+     }
+    {:label "beja_Re-VPrefNegFuture3-fedig"
+    :note "Reinisch1893 #253. Future3 is formed with infinitive of main verb and conjugated
+            aux haruw want"
+    :common {:conjClass :Prefix,
+	    :lexeme :fedig,
+	    :pdgmType :Compound,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Future3}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Common, :Person1, "fedug kā-harú̄"]
+            [:Singular, :Masc, :Person2, "fedug ki-t-háruw-a"]
+            [:Singular, :Fem, :Person2, "fedug ki-t-háruw-i"]
+            [:Singular, :Masc, :Person3, "fedug kī-harú̄"]
+            [:Singular, :Fem, :Person3, "fedug ki-t-harú̄"]
+            [:Plural, :Common, :Person1, "fedug ki-n-harú̄"]
+            [:Plural, :Common, :Person2, "fedug ki-t-harú̄-na"]
+            [:Plural, :Common, :Person3, "fedug ki-harú̄-na"]]
+     }
     {:label "beja_Re-VPrefNegCCPerfect-auxFay"
     :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
             hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
@@ -1514,14 +1494,34 @@
 	    :rootClass :CC,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Singular, :Person1, "token"],
-	    [:Common, :Plural, :Person1, "fāy-á̄t"],
-	    [:Masc, :Singular, :Person2, "fāy-á̄b"],
-	    [:Common, :Plural, :Person3, "fāy-á̄ba"],
-	    [:Masc, :Singular, :Person3, "fāy-á̄t"],
-	    [:Fem, :Singular, :Person3, "fāy-á̄b"],
-	    [:Common, :Plural, :Person2, "fāy-á̄ba"],
-	    [:Fem, :Singular, :Person2, "fāy-á̄b"]]
+	    [:Common, :Singular, :Person1, "fāy-á̄b ká̄-kē"],
+	    [:Masc, :Singular, :Person2, "fāy-á̄b kítta"],
+	    [:Fem, :Singular, :Person2, "fāy-á̄t kíttay"],
+	    [:Masc, :Singular, :Person3, "fāy-á̄b kí̄kē"]
+	    [:Fem, :Singular, :Person3, "fāy-á̄t kítte"],
+	    [:Common, :Plural, :Person1, "fāy-á̄ba kínke"],
+	    [:Common, :Plural, :Person2, "fāy-á̄ba kíttēna"],
+	    [:Common, :Plural, :Person3, "fāy-á̄ba kí̄kēna"]]
+    }
+    {:label "beja_Re-VPrefNegCCPerfect-auxHay"
+    :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
+            hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
+    :common {:conjClass :Prefix,
+	    :conjSubType :AuxHay,
+	    :lexeme :hay,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :rootClass :CC,
+	    :tam :Perfect}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Singular, :Person1, "hāy-á̄b ká̄-kē"],
+	    [:Masc, :Singular, :Person2, "hāy-á̄b kítta"],
+	    [:Fem, :Singular, :Person2, "hāy-á̄t kíttay"],
+	    [:Masc, :Singular, :Person3, "hāy-á̄b kí̄kē"]
+	    [:Fem, :Singular, :Person3, "hāy-á̄t kítte"],
+	    [:Common, :Plural, :Person1, "hāy-á̄ba kínke"],
+	    [:Common, :Plural, :Person2, "hāy-á̄ba kíttēna"],
+	    [:Common, :Plural, :Person3, "hāy-á̄ba kí̄kēna"]]
     }
     {:label "beja_Re-VSuffAffImprtv-dur"
     :note "Reinisch1893 #326-340"
@@ -1568,27 +1568,7 @@
 	    [:Masc, :Singular, :Person3, "é̄-s-‘ami"],
 	    [:Fem, :Singular, :Person3, "té̄-s-‘ami"]]
     }
-    {:label "beja_Re-VPrefCCNegPerfectAuxFay"
-    :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
-            hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-    :common {:conjClass :Prefix,
-	    :lexeme :fay,
-	    :pdgmSubType :AuxFay,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :rootClass :CC,
-	    :tam :Perfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "fāy-á̄t"],
-	    [:Fem, :Singular, :Person3, "fāy-á̄b"],
-	    [:Masc, :Singular, :Person2, "fāy-á̄b"],
-	    [:Common, :Plural, :Person3, "fāy-á̄ba"],
-	    [:Fem, :Singular, :Person2, "fāy-á̄b"],
-	    [:Common, :Plural, :Person1, "fāy-á̄t"],
-	    [:Common, :Singular, :Person1, "token"],
-	    [:Common, :Plural, :Person2, "fāy-á̄ba"]]
-    }
-    {:label "beja_Re-VPrefCHCAffPresent-beʔan"
+     {:label "beja_Re-VPrefCHCAffPresent-beʔan"
     :note "Reinisch1893 #245"
     :common {:conjClass :Prefix,
 	    :lexeme :beʔan,
@@ -1619,10 +1599,9 @@
 	    [:Fem, :Singular, :Person3, "bi-d-dí̄r-ē"],
 	    [:Masc, :Singular, :Person2, "bi-d-dí̄r-ē"],
 	    [:Common, :Singular, :Person1, "bā-dí̄r-ē"],
-	    [:Common, :Plural, :Person3, "bi-d-dí̄r-nē"],
+	    [:Common, :Plural, :Person3, "bi-dí̄r-n-ē"],
 	    [:Fem, :Singular, :Person2, "bi-d-dí̄r-ē"],
 	    [:Masc, :Singular, :Person3, "bī-dí̄r-ē"],
-	    [:Common, :Singular, :Person1, "bī-dí̄r-n-ē"],
 	    [:Common, :Plural, :Person1, "bi-n-dí̄r-ē"]]
     }
     {:label "beja_Re-VPrefAffCCPerfect-auxFay"
@@ -1636,14 +1615,14 @@
 	    :rootClass :CC,
 	    :tam :Perfect}
     :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "tí̄-fī"],
-	    [:Common, :Plural, :Person3, "ti-fí-na"],
-	    [:Common, :Singular, :Person1, "token"],
-	    [:Common, :Plural, :Person1, "tí̄-fi"],
-	    [:Masc, :Singular, :Person2, "í̄-fē"],
-	    [:Fem, :Singular, :Person2, "ti-fíy-a"],
-	    [:Common, :Plural, :Person2, "ní̄-fi"],
-	    [:Fem, :Singular, :Person3, "í̄-fi"]]
+	    [:Fem, :Singular, :Person3, "tí̄-fī"],
+	    [:Common, :Plural, :Person2, "ti-fí-na"],
+	    [:Common, :Plural, :Person3, "i-fí-na"],
+	    [:Fem, :Singular, :Person2, "tí̄-fi"],
+	    [:Common, :Singular, :Person1, "í̄-fē"],
+	    [:Masc, :Singular, :Person2, "ti-fíy-a"],
+	    [:Common, :Plural, :Person1, "ní̄-fi"],
+	    [:Masc, :Singular, :Person3, "í̄-fi"]]
     }
     {:label "beja_Re-VSuffAffPerfectRel-dur"
     :note "Reinisch1893 #326-340"
@@ -1766,6 +1745,7 @@
     :common {:conjClass :Suffix,
 	    :lexeme :dur,
 	    :number :Singular,
+	    :pdgmType :Compound,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :tam :Future1}
@@ -1820,26 +1800,6 @@
 	    [:Suffix, :Masc, :Person2, :Present, "dir-te-níy-a"],
 	    [:Suffix, :Fem, :Person2, :Perfect, "dír-t-a[n]i"],
 	    [:Prefix, :Common, :Person1, :Present, "a-n-dí̄r"]]
-    }
-    {:label "beja_Re-VPrefCCAffPerfectAuxFay"
-    :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
-            hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-    :common {:conjClass :Prefix,
-	    :lexeme :fay,
-	    :pdgmSubType :AuxFay,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :rootClass :CC,
-	    :tam :Perfect}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "tí̄-fi"],
-	    [:Common, :Plural, :Person3, "ti-fí-na"],
-	    [:Fem, :Singular, :Person3, "í̄-fi"],
-	    [:Masc, :Singular, :Person2, "í̄-fē"],
-	    [:Masc, :Singular, :Person3, "tí̄-fī"],
-	    [:Common, :Plural, :Person2, "ní̄-fi"],
-	    [:Common, :Singular, :Person1, "token"],
-	    [:Fem, :Singular, :Person2, "ti-fíy-a"]]
     }
     {:label "beja_Re-VSuffAffPerfectDur-dur"
     :note "Reinisch1893 #326-340"
@@ -2028,7 +1988,7 @@
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Masc, :Plural, :Person2, "bā-karí-b-āna"],
 	    [:Fem, :Singular, :Person1, "bā-karí̄-t-u"],
-	    [:Common, :Plural, :Person2, "f"],
+	    [:Fem, :Plural, :Person2, "bā-karí-t-āna"],
 	    [:Masc, :Plural, :Person1, "bā-karí̄-b-a"],
 	    [:Masc, :Singular, :Person1, "bā-karí̄-b-u"],
 	    [:Masc, :Singular, :Person2, "bā-karí̄-b-ua"],
@@ -2050,14 +2010,14 @@
 	    :rootClass :CC,
 	    :tam :Present}
     :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Fem, :Singular, :Person3, "kī-fá̄y"],
-	    [:Masc, :Singular, :Person2, "kā-fá̄y"],
-	    [:Common, :Singular, :Person1, "token"],
-	    [:Common, :Plural, :Person2, "ki-n-fá̄y"],
-	    [:Common, :Plural, :Person3, "ki-t-fé̄-na"],
-	    [:Fem, :Singular, :Person2, "ki-t-fá̄y-a"],
-	    [:Common, :Plural, :Person1, "ki-t-fá̄y"],
-	    [:Masc, :Singular, :Person3, "ki-t-fá̄y"]]
+	    [:Masc, :Singular, :Person3, "kī-fá̄y"],
+	    [:Common, :Singular, :Person1, "kā-fá̄y"],
+	    [:Common, :Plural, :Person3, "ki-fé̄-na"],
+	    [:Common, :Plural, :Person1, "ki-n-fá̄y"],
+	    [:Common, :Plural, :Person2, "ki-t-fé̄-na"],
+	    [:Masc, :Singular, :Person2, "ki-t-fá̄y-a"],
+	    [:Fem, :Singular, :Person2, "ki-t-fá̄y"],
+	    [:Fem, :Singular, :Person3, "ki-t-fá̄y"]]
     }
     {:label "beja_Re-VSuffAffPluperfect-dur"
     :note "Reinisch1893 #326-340"
@@ -2149,26 +2109,6 @@
 	    [:Masc, :Singular, :Person2, "te-só̄-dhiy-a"],
 	    [:Common, :Plural, :Person2, "te-sō-dhina"]]
     }
-    {:label "beja_Re-VPrefCCAffPresentAuxHay"
-    :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
-            hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-    :common {:conjClass :Prefix,
-	    :lexeme :hay,
-	    :pdgmSubType :AuxHay,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :rootClass :CC,
-	    :tam :Present}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Fem, :Singular, :Person2, "te-há̄y"],
-	    [:Common, :Plural, :Person3, "e-hé̄-na"],
-	    [:Common, :Plural, :Person2, "te-hé-̄na"],
-	    [:Fem, :Singular, :Person3, "té̄-he"],
-	    [:Masc, :Singular, :Person3, "é̄-he"],
-	    [:Common, :Plural, :Person1, "né̄-he"],
-	    [:Common, :Singular, :Person1, "é̄-he"],
-	    [:Masc, :Singular, :Person2, "te-há̄y-a"]]
-    }
     {:label "beja_Re-VPrefCHCAffPresent-kehan"
     :note "Reinisch1893 #238"
     :common {:conjClass :Prefix,
@@ -2250,29 +2190,12 @@
 	    [:Common, :Plural, :Person3, "bī-fadí̄g-n-ē"],
 	    [:Common, :Plural, :Person1, "bi-n-fadí̄g-ē"],
 	    [:Masc, :Singular, :Person3, "bī-fadí̄g-ē"],
+	    [:Masc, :Singular, :Person2, "bi-t-fadí̄g-ē"],
 	    [:Fem, :Singular, :Person2, "bi-t-fadí̄g-ē"],
-	    [:Masc, :Singular, :Person2, "bā-fadí̄g-ē"],
+	    [:Common, :Singular, :Person1, "bā-fadí̄g-ē"],
 	    [:Common, :Plural, :Person2, "bi-t-fadí̄g-n-ē"]]
     }
-    {:label "beja_Re-VPrefNegFuture3-fedig"
-    :note "Reinisch1893 #253. Future3 is formed with infinitive of main verb and conjugated
-            aux haruw want"
-    :common {:conjClass :Prefix,
-	    :lexeme :fedig,
-	    :pdgmType :Compound,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Future3}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "fedug"],
-	    [:Common, :Plural, :Person1, "fedug"],
-	    [:Common, :Plural, :Person2, "fedug"],
-	    [:Common, :Singular, :Person1, "fedug"],
-	    [:Common, :Plural, :Person3, "fedug"],
-	    [:Fem, :Singular, :Person2, "fedug"],
-	    [:Fem, :Singular, :Person3, "fedug"],
-	    [:Masc, :Singular, :Person2, "fedug"]]
-    }}
+}
 :muterms #{
     {:label "beja_Re-PObjSuff"
     :note "Reinisch1893 #174"
