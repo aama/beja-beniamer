@@ -2,6 +2,7 @@
 :lang :beja-beniamer
 :sgpref "bbe"
 :datasource "Reinisch1893"
+:datasourceNotes "Reinisch uses the terms 'perfect' and 'plusquamperfect' for what are here termed 'Past' and 'Aorist'"
 :geodemoURL "http://www.ethnologue.com/language/bej"
 :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. One of the Southern-most representative of Beja is documented here, that of the Beni-Amer in Barka, in what is now Eritrea, studied by Leo Reinisch (1893) in what is, along with Almkvist's study of the Bishari, one of the earliest monographs dedicated to a variety of Beja."
 :schemata {
@@ -22,12 +23,12 @@
 	  :pos [:Pronoun, :Verb, :Var]
 	  :proClass [:Independent, :IndependentPossessive, :ObjectSuffix, :PossCop, :PossSuff]
 	  :rootClass [:CC, :CCC, :CCY, :CHC, :CaC, :CeC]
-	  :tam [:Conditional, :ConditionalPerfect, :ConditionalPresent, :Future1, :Future2, :Future2Var, :Future3, :Imperfect, :Imperative, :Jussive, :Optative, :Perfect, :PerfectDur, :PerfectRel, :Pluperfect, :Present, :PresentDur, :PresentRel]
+	  :tam [:Conditional, :ConditionalPerfect, :ConditionalPresent, :Future1, :Future2, :Future2Var, :Future3, :Imperfect, :Imperative, :Jussive, :Optative, :Past, :PastDur, :PastRel, :Aorist, :Present, :PresentDur, :PresentRel]
 	  }
 :pclass {
-           :pngClass [:person :number :gender ]
-           :synsemClass [:case  :derivedStem :polarity :pos :proClass :tam ]
-           :inflClass [:conjClass  ]
+           :pngClass [:person :number :gender :genHead :numHead ]  
+           :synsemClass [:case  :derivedStem :derivedStemAug :polarity :pos :proClass :tam ]
+           :inflClass [:conjClass :conjSubType :rootClass  ]
            :otherClass [ ]
           }
 :morphemes {
@@ -50,7 +51,6 @@
   :bedah {:gloss "bezeugen", :lemma "m-badāh"}
   :bedin {:gloss "[x]", :lemma "[y]", }
   :berir {:gloss "ausbreiten", :lemma "berār"}
-  :beʔan {:gloss "[x]", :lemma "[y]", }
   :beʔān {:gloss "fear", :lemma "beʔān", }
   :bis {:gloss "bury", :lemma "bis", }
   :dab {:gloss "", :lemma "dab-s"}
@@ -142,9 +142,7 @@
   :sebir {:gloss "(pass) sich flüchten", :lemma "sebār", }
   :sedid {:gloss "peel", :lemma "sedid", }
   :sefi {:gloss "drink", :lemma "sefi", }
-  :sehad {:gloss "sweep", :lemma "sehad", }
-  :sehag {:gloss "fegen", :lemma "si-shag"}
-  :selif {:gloss "leihen", :lemma "astalāf"}
+  :sehag {:gloss "sweep", :lemma "sehag", }
   :selit {:gloss "putzen", :lemma "si-salit"}
   :semit {:gloss "schmiren", :lemma "semāt"}
   :seni {:gloss "stay", :lemma "seni", }
@@ -259,7 +257,7 @@
 	    :lexeme :rib,
 	    :polarity :Negative,
 	    :pos :Verb,
-	    :tam :Perfect}
+	    :tam :Past}
     :terms [[:number, :gender, :person, :token]  ;; schema
             [:Singular, :Common, :Person1, "a-ríib"]
             [:Singular, :Masc, :Person2, "tí-rib-a"]
@@ -333,7 +331,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :tam :Perfect}
+	    :tam :Past}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "ká̄-kē"],
 	    [:Masc, :Singular, :Person2, "kítta"],
@@ -491,7 +489,7 @@
 	    :number :Singular,
 	    :polarity :Negative,
 	    :pos :Verb,
-	    :tam :PerfectDur}
+	    :tam :PastDur}
     :terms [[:gender, :person, :token]  ;; schema
 	    [:Fem, :Person2, "dú̄r-tay hāy-á-t kí-t-tay"],
 	    [:Common, :Person1, "dú̄r-an hāy-á̄-b ká̄ke"],
@@ -574,7 +572,7 @@
 	    :lexeme :COPULA,
 	    :pdgmSubType :CopAn,
 	    :pos :Verb,
-	    :tam :Perfect}
+	    :tam :Past}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "a-‘án"],
 	    [:Masc, :Singular, :Person3, "y-an"],
@@ -673,15 +671,15 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CCC,
-	    :tam :Perfect}
+	    :tam :Past}
     :terms [[:gender, :lexeme, :number, :person, :token]  ;; schema
 	    [:Common, :ketib, :Plural, :Person1, "ní-ktib"],
 	    [:Masc, :ketib, :Singular, :Person3, "í-ktib"],
 	    [:Fem, :ketib, :Singular, :Person2, "tí-ktib-i"],
-	    [:Common, :ketib, :Singular, :Person2, "te-ktíb-na"],
+	    [:Common, :ketib, :Plural, :Person2, "te-ktíb-na"],
 	    [:Fem, :ketib, :Singular, :Person3, "tí-ktib"],
 	    [:Common, :ketib, :Singular, :Person1, "á-ktib"],
-	    [:Common, :ketib, :Singular, :Person3, "e-ktíb-na"],
+	    [:Common, :ketib, :Plural, :Person3, "e-ktíb-na"],
 	    [:Masc, :ketib, :Singular, :Person2, "tí-ktib-a"]]
     }
     {:label "beja_Re-VPrefCCCAffPresent-debil"
@@ -763,7 +761,7 @@
 	    :pdgmType :RootForm,
 	    :polarity :Affirmative,
 	    :pos :Verb,
-	    :tam :Pluperfect}
+	    :tam :Aorist}
     :terms [[:gender, :person, :rootClass, :token, :lexeme]  ;; schema
 	    [:Fem, :Person2, :CaC, "te-dár-i", :dar],
 	    [:Masc, :Person3, :CaC, "e-dár", :dar],
@@ -843,7 +841,7 @@
 	    :lexeme :dur,
 	    :polarity :Negative,
 	    :pos :Verb,
-	    :tam :PerfectRel}
+	    :tam :PastRel}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Fem, :Singular, :Person3, "bā-dūr-ty-é̄"],
 	    [:Fem, :Singular, :Person2, "bā-dūr-ty-é̄"],
@@ -854,10 +852,10 @@
 	    [:Common, :Plural, :Person2, "bā-dūr-tí̄n-ē"],
 	    [:Common, :Singular, :Person1, "bā-dūr-y-é̄"]]
     }
-    {:label "beja_Re-VPrefCHCAffPresent-sehad"
+    {:label "beja_Re-VPrefCHCAffPresent-sehag"
     :note "Reinisch1893 #238"
     :common {:conjClass :Prefix,
-	    :lexeme :sehad,
+	    :lexeme :sehag,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CHC,
@@ -913,7 +911,7 @@
 	    :lexeme :dur,
 	    :polarity :Affirmative,
 	    :pos :Verb,
-	    :tam :Perfect}
+	    :tam :Past}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "dūr-yá̄na"],
 	    [:Masc, :Singular, :Person3, "dú̄r-ya"],
@@ -1491,7 +1489,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :tam :Perfect}
+	    :tam :Past}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "fāy-á̄b ká̄-kē"],
 	    [:Masc, :Singular, :Person2, "fāy-á̄b kítta"],
@@ -1511,7 +1509,7 @@
 	    :polarity :Negative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :tam :Perfect}
+	    :tam :Past}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Singular, :Person1, "hāy-á̄b ká̄-kē"],
 	    [:Masc, :Singular, :Person2, "hāy-á̄b kítta"],
@@ -1612,7 +1610,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :tam :Perfect}
+	    :tam :Past}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Fem, :Singular, :Person3, "tí̄-fī"],
 	    [:Common, :Plural, :Person2, "ti-fí-na"],
@@ -1629,7 +1627,7 @@
 	    :lexeme :dur,
 	    :polarity :Affirmative,
 	    :pos :Verb,
-	    :tam :PerfectRel}
+	    :tam :PastRel}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "dūr-yān -é̄ (fem.- é̄t)"],
 	    [:Masc, :Singular, :Person2, "dūr-tan -é̄ (fem.- é̄t)"],
@@ -1672,6 +1670,146 @@
 	    [:Fem, :Singular, :Person2, "té̄-tbī-ya"],
 	    [:Common, :Plural, :Person3, "ē-tbí̄-na"]]
     }
+    {:label "beja_Re-VPrefCCAffPresent-dir"
+    :note "Reinisch1893 #239"
+    :common {:conjClass :Prefix,
+	    :lexeme :dir,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :rootClass :CC,
+	    :derivedStem :BaseIntns,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Person1, :Common, "ē-dirií̄"]
+            [:Singular, :Person2, :Masc, "tē-dirí̄-ya"]
+            [:Singular, :Person2, :Fem, "tē-dirí̄"]
+            [:Singular, :Person3, :Masc, "ē-dirí̄"]
+            [:Singular, :Person3, :Fem, "tē-dirí̄"]
+            [:Plural, :Person1, :Common, "nē-dirí̄"]
+            [:Plural, :Person2, :Common, "tē-dirí̄-na"]
+            [:Plural, :Person3, :Common, "ē-dirí̄-na"]
+            ]
+     }
+    {:label "beja_Re-VPrefCCAffPresent-fedig"
+    :note "Reinisch1893 #239"
+    :common {:conjClass :Prefix,
+	    :lexeme :fedig,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :rootClass :CCC,
+	    :derivedStem :BaseIntns,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Person1, :Common, "é̄-fdīg"]
+            [:Singular, :Person2, :Masc, "té̄-fdīg-a"]
+            [:Singular, :Person2, :Fem, "té̄-fdīg-i"]
+            [:Singular, :Person3, :Masc, "é̄-fdīg"]
+            [:Singular, :Person3, :Fem, "té̄-fdīg"]
+            [:Plural, :Person1, :Common, "né̄-fdīg"]
+            [:Plural, :Person2, :Common, "tē-fdíg-na"]
+            [:Plural, :Person3, :Common, "ē-fíg-na"]
+            ]
+     }
+    {:label "beja_Re-VPrefCCAffPresent-am"
+    :note "Reinisch1893 #244"
+    :common {:conjClass :Prefix,
+	    :lexeme :am,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :rootClass :CC,
+	    :derivedStem :BaseIntns,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Person1, :Common, "é̄-‘ami"]
+            [:Singular, :Person2, :Masc, "tē-‘ámy-a"]
+            [:Singular, :Person2, :Fem, "tē-‘amí̄"]
+            [:Singular, :Person3, :Masc, "é̄-‘ami"]
+            [:Singular, :Person3, :Fem, "té̄-‘ami"]
+            [:Plural, :Person1, :Common, "né̄-‘ami"]
+            [:Plural, :Person2, :Common, "tē-‘amí̄-na"]
+            [:Plural, :Person3, :Common, "ē-‘amí̄-na"]
+            ]
+     }
+    {:label "beja_Re-VPrefCCAffPresent-dah"
+    :note "Reinisch1893 #244"
+    :common {:conjClass :Prefix,
+	    :lexeme :dah,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :rootClass :CCC,
+	    :derivedStem :BaseIntns,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Person1, :Common, "é̄-dhi"]
+            [:Singular, :Person2, :Masc, "té̄-dhiy-a"]
+            [:Singular, :Person2, :Fem, "té̄-dhī"]
+            [:Singular, :Person3, :Masc, "é̄-dhi"]
+            [:Singular, :Person3, :Fem, "té̄-dhi"]
+            [:Plural, :Person1, :Common, "né̄-dhi"]
+            [:Plural, :Person2, :Common, "tē-dhí̄-na"]
+            [:Plural, :Person3, :Common, "ē-dhí̄-na"]
+            ]
+     }
+    {:label "beja_Re-VPrefCCAffPresent-be'an"
+    :note "Reinisch1893 #244"
+    :common {:conjClass :Prefix,
+	    :lexeme :beʔān,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :rootClass :CCC,
+	    :derivedStem :BaseIntns,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Person1, :Common, "á-b’ani"]
+            [:Singular, :Person2, :Masc, "te-b’ány-a"]
+            [:Singular, :Person2, :Fem, "te-b’aní̄"]
+            [:Singular, :Person3, :Masc, "é̄-b’ani"]
+            [:Singular, :Person3, :Fem, "té̄-b’ani"]
+            [:Plural, :Person1, :Common, "né̄-b’ani"]
+            [:Plural, :Person2, :Common, "te-b’aní̄-na"]
+            [:Plural, :Person3, :Common, "e-b’aní̄-na"]
+            ]
+     }
+    {:label "beja_Re-VPrefCCAffPresent-dir"
+    :note "Reinisch1893 #235"
+    :common {:conjClass :Prefix,
+	    :lexeme :dir,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :rootClass :CC,
+	    :derivedStem :Base,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Person1, :Common, "a-n-dír"]
+            [:Singular, :Person2, :Masc, "té-n-dīr-a"]
+            [:Singular, :Person2, :Fem, "té-n-dīr-i"]
+            [:Singular, :Person3, :Masc, "e-n-dīr"]
+            [:Singular, :Person3, :Fem, "te-n-dí̄r"]
+            [:Plural, :Person1, :Common, "né̄-dir ~ ne-dé̄r"]
+            [:Plural, :Person2, :Common, "tē-dír-na ~ tē-dé̄r-na"]
+            [:Plural, :Person3, :Common, "ē-dír-na ~ ē-dé̄r-na"]
+]
+     }
+    {:label "beja_Re-VPrefCCAffPresent-t'a"
+    :note "Reinisch1893 #235"
+    :common {:conjClass :Prefix,
+	    :lexeme :t'a,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :rootClass :CC,
+	    :derivedStem :Base,
+	    :tam :Present}
+    :terms [[:number, :person, :gender, :token]  ;; schema
+            [:Singular, :Person1, :Common, "a-n-tí̄’"]
+            [:Singular, :Person2, :Masc, "té-n-tī’-a"]
+            [:Singular, :Person2, :Fem, "té-n-tī’-i"]
+            [:Singular, :Person3, :Masc, "e-n-tí̄’"]
+            [:Singular, :Person3, :Fem, "te-n-tí̄’"]
+            [:Plural, :Person1, :Common, "né̄-ta’ ~ ne-té̄"]
+            [:Plural, :Person2, :Common, "tē-tá’-na ~ tē-té̄’na"]
+            [:Plural, :Person3, :Common, "ē-tá’-na ~ ē-té̄’na"]
+            ]
+     }
     {:label "beja_Re-VPrefPassStemForm"
     :note "Reinisch1893 #209-213"
     :common {:conjClass :Prefix,
@@ -1779,25 +1917,25 @@
 	    :pdgmType :PrefVsSuff,
 	    :pos :Verb}
     :terms [[:conjClass, :gender, :person, :tam, :token]  ;; schema
-	    [:Prefix, :Fem, :Person2, :Perfect, "tí-dir-i"],
-	    [:Suffix, :Common, :Person1, :Perfect, "dir-á-n"],
-	    [:Suffix, :Fem, :Person3, :Perfect, "dír-t-a[n"],
+	    [:Prefix, :Fem, :Person2, :Past, "tí-dir-i"],
+	    [:Suffix, :Common, :Person1, :Past, "dir-á-n"],
+	    [:Suffix, :Fem, :Person3, :Past, "dír-t-a[n"],
 	    [:Prefix, :Masc, :Person2, :Present, "té-n-dīr-a"],
-	    [:Suffix, :Masc, :Person2, :Perfect, "dír-t-a[na"],
+	    [:Suffix, :Masc, :Person2, :Past, "dír-t-a[na"],
 	    [:Prefix, :Fem, :Person3, :Present, "te-n-dí̄r"],
-	    [:Prefix, :Masc, :Person2, :Perfect, "tí-dir-a"],
-	    [:Prefix, :Masc, :Person3, :Perfect, "e-dír"],
+	    [:Prefix, :Masc, :Person2, :Past, "tí-dir-a"],
+	    [:Prefix, :Masc, :Person3, :Past, "e-dír"],
 	    [:Prefix, :Masc, :Person3, :Present, "e-n-dí̄r"],
 	    [:Suffix, :Fem, :Person2, :Present, "dir-te-ní̄"],
 	    [:Suffix, :Masc, :Person3, :Present, "dir-í̄-ni"],
 	    [:Suffix, :Fem, :Person3, :Present, "dir-tí-ni"],
-	    [:Suffix, :Masc, :Person3, :Perfect, "dír-y-a[n"],
+	    [:Suffix, :Masc, :Person3, :Past, "dír-y-a[n"],
 	    [:Prefix, :Fem, :Person2, :Present, "té-n-dīr-i"],
-	    [:Prefix, :Fem, :Person3, :Perfect, "te-dír"],
+	    [:Prefix, :Fem, :Person3, :Past, "te-dír"],
 	    [:Suffix, :Common, :Person1, :Present, "dír-a-ni"],
-	    [:Prefix, :Common, :Person1, :Perfect, "a-dír"],
+	    [:Prefix, :Common, :Person1, :Past, "a-dír"],
 	    [:Suffix, :Masc, :Person2, :Present, "dir-te-níy-a"],
-	    [:Suffix, :Fem, :Person2, :Perfect, "dír-t-a[n]i"],
+	    [:Suffix, :Fem, :Person2, :Past, "dír-t-a[n]i"],
 	    [:Prefix, :Common, :Person1, :Present, "a-n-dí̄r"]]
     }
     {:label "beja_Re-VSuffAffPerfectDur-dur"
@@ -1807,7 +1945,7 @@
 	    :number :Singular,
 	    :polarity :Affirmative,
 	    :pos :Verb,
-	    :tam :PerfectDur}
+	    :tam :PastDur}
     :terms [[:gender, :person, :token]  ;; schema
 	    [:Common, :Person1, "dú̄r-an í̄-he"],
 	    [:Masc, :Person2, "dú̄r-ta ti-híy-a"],
@@ -1820,7 +1958,7 @@
 	    :pdgmType :StemFormation,
 	    :polarity :Affirmative,
 	    :pos :Verb,
-	    :tam :Pluperfect}
+	    :tam :Aorist}
     :terms [[:derivedStem, :derivedStemAug, :token, :lexeme]  ;; schema
 	    [:S, :Intransitive, "e-s-‘im", :am],
 	    [:Base, :Intensive, "i-dedír", :dedir],
@@ -1894,7 +2032,7 @@
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
-	    :tam :Perfect}
+	    :tam :Past}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "i-hí̄-na"],
 	    [:Common, :Singular, :Person1, "i-hē"],
@@ -1964,7 +2102,7 @@
 	    :lexeme :dur,
 	    :polarity :Negative,
 	    :pos :Verb,
-	    :tam :Perfect}
+	    :tam :Past}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Masc, :Singular, :Person2, "dūr-á̄-b kí-t-ta"],
 	    [:Fem, :Singular, :Person2, "dūr-á̄-t kít-tay"],
@@ -2022,7 +2160,7 @@
 	    :lexeme :dur,
 	    :polarity :Affirmative,
 	    :pos :Verb,
-	    :tam :Pluperfect}
+	    :tam :Aorist}
     :terms [[:gender, :number, :person, :token]  ;; schema
 	    [:Common, :Plural, :Person3, "dūr-í̄n(a)"],
 	    [:Common, :Singular, :Person1, "dú̄r-e"],
