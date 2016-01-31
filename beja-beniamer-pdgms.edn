@@ -1750,7 +1750,7 @@
             [:Plural, :Person3, :Common, "ē-dhí̄-na"]
             ]
      }
-    {:label "beja_Re-VPrefCCAffPresent-be'an"
+    {:label "beja_Re-VPrefCCAffPresent-be_an"
     :note "Reinisch1893 #244"
     :common {:conjClass :Prefix,
 	    :lexeme :beʔān,
@@ -1790,10 +1790,10 @@
             [:Plural, :Person3, :Common, "ē-dír-na ~ ē-dé̄r-na"]
 ]
      }
-    {:label "beja_Re-VPrefCCAffPresent-t'a"
+    {:label "beja_Re-VPrefCCAffPresent-t_a"
     :note "Reinisch1893 #235"
     :common {:conjClass :Prefix,
-	    :lexeme :t'a,
+	    :lexeme :t_a,
 	    :polarity :Affirmative,
 	    :pos :Verb,
 	    :rootClass :CC,
