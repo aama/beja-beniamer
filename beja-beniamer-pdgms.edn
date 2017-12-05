@@ -6,8 +6,9 @@
  :datasourceNotes "Reinisch uses the terms 'perfect' and 'plusquamperfect' for what are here termed 'Past' and 'Aorist'"
  :geodemoURL "http://www.ethnologue.com/language/bej"
  :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. One of the Southern-most representative of Beja is documented here, that of the Beni-Amer in Barka, in what is now Eritrea, studied by Leo Reinisch (1893) in what is, along with Almkvist's study of the Bishari, one of the earliest monographs dedicated to a variety of Beja."
- :schemata {:complang [:Arabic  :Hebrew],
+ :schemata {:vmorphClass [:COMPSEM  :DERVSTEMAORIST :DERVSTEMCAUS :DERVSTEMCOLL :DERVSTEMPASS :DERVSTEMRECIP :DERVSTEMREFL :DERVSTEMSUFF :PrefVersusSuff :TENSESTEMAORIST],
             :case [:Object :Subject],
+            :complang [:Arabic :Hebrew],
             :conjClass [:Prefix :Suffix],
             :conjSubType [:AuxFay :AuxHay],
             :derivedStem [:Base :BaseIntns :CausalIntransitive :Causative :Collaborative :Cooperative :M :M1 :M2 :MS1 :MS2 :Passive :Reciprocal :Reflexive :S :S1 :S2 :SM],
@@ -23,7 +24,7 @@
             :rootClass [:CC :CCC :CCY :CHC :CaC :CeC],
             :stemClass [:C_final :V_final :_NA],
             :tam [:Aorist :Conditional :ConditionalPerfect :ConditionalPresent :Future1 :Future2 :Future2Var :Future3 :Imperative :Imperfect :Jussive :Optative :Past :PastDur :PastRel :Present :PresentDur :PresentRel]
-            :pdgmType [:COMPSEM :DERVSTEMAORIST :DERVSTEMCAUS :DERVSTEMCOLL :DERVSTEMPASS :DERVSTEMRECIP :DERVSTEMREFL :DERVSTEMSUFF :Finite :FiniteCompound :PrefVersusSuff :TENSESTEMAORIST :PRO]}
+            :pdgmType [:Finite :FiniteCompound :PRO :VOther]}
  :pclass {:pngClass [:person :number :gender :genHead :numHead],
           :synsemClass [:case :derivedStem :derivedStemAug :polarity :pos :proClass :tam],
           :inflClass [:conjClass :conjSubType :rootClass],
@@ -471,8 +472,9 @@
             }
            {:label "beja_Re-VPrefAffPluperfRootForm"
             :note "Reinisch1893 #232"
-            :pdgmType :TENSESTEMAORIST
-            :common {:conjClass :Prefix,
+            :pdgmType :VOther
+            :common {:vmorphClass :TENSESTEMAORIST
+                     :conjClass :Prefix,
                      :number :Singular,
                      :polarity :Affirmative,
                      :pos :Verb,
@@ -496,8 +498,9 @@
             }
            {:label "beja_Re-VPrefAffPluperfStemFormation"
             :note "Reinisch1893 #231"
-            :pdgmType :DERVSTEMAORIST
-            :common {:conjClass :Prefix,
+            :pdgmType :VOther
+            :common {:vmorphClass :DERVSTEMAORIST
+                     :conjClass :Prefix,
                      :polarity :Affirmative,
                      :pos :Verb,
                      :tam :Aorist}
@@ -986,8 +989,9 @@
             }
            {:label "beja_Re-VPrefCCCAffPerfectCompSem"
             :note "Reinisch1893 #225; compares Arb, Heb imperfect with Beniamer perfect"
-            :pdgmType :COMPSEM
-            :common {:conjClass :Prefix,
+            :pdgmType :VOther
+            :common {:vmorphClass :COMPSEM
+                     :conjClass :Prefix,
                      :polarity :Affirmative,
                      :pos :Verb,
                      :rootClass :CCC,
@@ -1369,8 +1373,9 @@
             }
            {:label "beja_Re-VPrefCausStemForm"
             :note "Reinisch1893 #203-208"
-            :pdgmType :DERVSTEMCAUS
-            :common {:conjClass :Prefix,
+            :pdgmType :VOther
+            :common {:vmorphClass :DERVSTEMCAUS
+                     :conjClass :Prefix,
                      :derivedStem :S,
                      :pos :Verb}
             :terms [[:lexeme :token-note :token],
@@ -1407,8 +1412,9 @@
            {:label "beja_Re-VPrefCollaborativeStemForm"
             :note "Reinisch1893 #217-218. coop- called by Reinisch ʔmitwirkungs- oder
             socialstammʔ"
-            :pdgmType :DERVSTEMCOLL
-            :common {:conjClass :Prefix,
+            :pdgmType :VOther
+            :common {:vmorphClass :DERVSTEMCOLL
+                     :conjClass :Prefix,
                      :derivedStem :Collaborative,
                      :pos :Verb}
             :terms [[:lexeme :token-note :token],
@@ -1809,8 +1815,9 @@
             }
            {:label "beja_Re-VPrefPassStemForm"
             :note "Reinisch1893 #209-213"
-            :pdgmType :DERVSTEMPASS
-            :common {:conjClass :Prefix,
+            :pdgmType :VOther
+            :common {:vmorphClass :DERVSTEMPASS
+                     :conjClass :Prefix,
                      :derivedStem :M,
                      :pos :Verb}
             :terms [[:lexeme :token-note :token],
@@ -1856,8 +1863,9 @@
             }
            {:label "beja_Re-VPrefPrefVsSuff-dir"
             :note "Reinisch1893 #308"
-            :pdgmType :PrefVersusSuff
-            :common {:lexeme :dir,
+            :pdgmType :VOther
+            :common {:vmorphClass :PrefVersusSuff
+                     :lexeme :dir,
                      :number :Singular,
                      :pos :Verb}
             :terms [[:conjClass :tam :person :gender :token],
@@ -1901,8 +1909,9 @@
             }
            {:label "beja_Re-VPrefRecipStemForm"
             :note "Reinisch1893 #219"
-            :pdgmType :DERVSTEMRECIP
-            :common {:conjClass :Prefix,
+            :pdgmType :VOther
+            :common {:vmorphClass :DERVSTEMRECIP
+                     :conjClass :Prefix,
                      :derivedStem :Reciprocal,
                      :pos :Verb,
                      :token-note "m + redup. verb"}
@@ -1922,8 +1931,9 @@
             }
            {:label "beja_Re-VPrefReflStemForm"
             :note "Reinisch1893 #214-216"
-            :pdgmType :DERVSTEMREFL
-            :common {:conjClass :Prefix,
+            :pdgmType :VOther
+            :common {:vmorphClass :DERVSTEMREFL
+                     :conjClass :Prefix,
                      :derivedStem :Reflexive,
                      :pos :Verb}
             :terms [[:lexeme :token-note :token],
@@ -2174,8 +2184,9 @@
             }
            {:label "beja_Re-VSuffDervStemForm"
             :note "Reinisch1893 #325. [MAKE BETTER SYSTEMATIZATION OF RʔS ANALYSIS OF DERIVED STEMS.] In Reinisch,causPass is termed causatives reflexive;some instances of passCaus are termed reciprocum;passCaus2 is causatives reciprocum."
-            :pdgmType :DERVSTEMSUFF
-            :common {:conjClass :Suffix,
+            :pdgmType :VOther
+            :common {:vmorphClass :DERVSTEMSUFF
+                     :conjClass :Suffix,
                      :pos :Verb}
             :terms [[:derivedStem :derivedStemAug :lexeme :token],
                     [:Base :Intensive :dab "dadab"],
