@@ -161,7 +161,7 @@
                 {:label "beja_Re-VPrefAffCCPerfect-auxFay"
                  :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
             hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fay,
                           :polarity :Affirmative,
@@ -181,7 +181,7 @@
                 {:label "beja_Re-VPrefAffCCPerfect-auxHay"
                  :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
             hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :hay,
                           :polarity :Affirmative,
@@ -201,7 +201,7 @@
                 {:label "beja_Re-VPrefAffCCPresent-auxFay"
                  :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
             hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fay,
                           :polarity :Affirmative,
@@ -221,7 +221,7 @@
                 {:label "beja_Re-VPrefAffCCPresent-auxHay"
                  :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
             hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :hay,
                           :polarity :Affirmative,
@@ -241,7 +241,7 @@
                 {:label "beja_Re-VPrefAffFuture1-dir"
                  :note "Reinisch1893 #249-51. Future tenses are formed with main verb participle
             derát-,fídgat- plus a conjugated auxiliary yi- aff,ka+are/rib neg."
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :Affirmative,
@@ -259,7 +259,7 @@
                  }
                 {:label "beja_Re-VPrefAffFuture2-dir"
                  :note "Reinisch1893 #252. Future2 formed with inflected aux di say and 1st pers. sg. plusperf of main verb,lit. I will kill"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :Affirmative,
@@ -277,7 +277,7 @@
                  }
                 {:label "beja_Re-VPrefAffFuture2Var-dir"
                  :note "Reinisch1893 #252. Future2 formed with inflected aux di say and 1st pers. sg. plusperf of main verb,lit. I will kill they say. (Future2Var allows 1st pers pl plusperf of main verb for plural subjects.)[Not clear from #252 of Future2Var also possible in plural.]"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :gender :Common,
                           :lexeme :dir,
@@ -293,7 +293,7 @@
                 {:label "beja_Re-VPrefAffFuture3-fedig"
                  :note "Reinisch1893 #253. Future3 is formed with infinitive of main verb and conjugated
             aux haruw want"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :fedig,
                           :polarity :Affirmative,
@@ -311,7 +311,7 @@
                  }
                 {:label "beja_Re-VPrefAffImprtv-dir"
                  :note "Reinisch1893 #255-256"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :person :Person2,
@@ -325,7 +325,7 @@
                  }
                 {:label "beja_Re-VPrefAffImprtv-fedig"
                  :note "Reinisch1893 #255-256"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fedig,
                           :person :Person2,
@@ -339,7 +339,7 @@
                  }
                 {:label "beja_Re-VPrefAffImprtv-harid"
                  :note "Reinisch1893 #255-256"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :harid,
                           :person :Person2,
@@ -353,7 +353,7 @@
                  }
                 {:label "beja_Re-VPrefAffImprtv-kehan"
                  :note "Reinisch1893 #255-256"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :kehan,
                           :person :Person2,
@@ -367,7 +367,7 @@
                  }
                 {:label "beja_Re-VPrefAffImprtv-seni"
                  :note "Reinisch1893 #255-256"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :seni,
                           :person :Person2,
@@ -381,7 +381,7 @@
                  }
                 {:label "beja_Re-VPrefAffJussive-dir"
                  :note "Reinisch1893 #257-260"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :Affirmative,
@@ -399,7 +399,7 @@
                  }
                 {:label "beja_Re-VPrefAffJussive-fedig"
                  :note "Reinisch1893 #257-260"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fedig,
                           :polarity :Affirmative,
@@ -417,7 +417,7 @@
                  }
                 {:label "beja_Re-VPrefAffOptative-dir"
                  :note "Reinisch1893 #263-264"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :Affirmative,
@@ -435,7 +435,7 @@
                  }
                 {:label "beja_Re-VPrefAffOptative-fedig"
                  :note "Reinisch1893 #263-264"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fedig,
                           :polarity :Affirmative,
@@ -453,7 +453,7 @@
                  }
                 {:label "beja_Re-VPrefAffOptative-seni"
                  :note "Reinisch1893 #263-264"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :seni,
                           :polarity :Affirmative,
@@ -550,7 +550,7 @@
                  }
                 {:label "beja_Re-VPrefAffPres-di"
                  :note "Reinisch1893 #252;used as aux with Future2"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :di,
                           :polarity :Affirmative,
@@ -568,7 +568,7 @@
                  }
                 {:label "beja_Re-VPrefAffPres-har"
                  :note "Reinisch 1893 #253 Used as aux in Future3"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :har,
                           :polarity :Negative,
@@ -586,7 +586,7 @@
                  }
                 {:label "beja_Re-VPrefAffPres-har"
                  :note "Reinisch 1893 #253 Used as aux in Future3"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :har,
                           :polarity :Affirmative,
@@ -604,7 +604,7 @@
                  }
                 {:label "beja_Re-VPrefAffPres-yi"
                  :note "Reinisch1893 #249;used as aux with Future1"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :yi,
                           :polarity :Affirmative,
@@ -622,7 +622,7 @@
                  }
                 {:label "beja_Re-VPrefAffPres-yi"
                  :note "Reinisch1893 #249;used as aux with Future1"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :yi,
                           :polarity :Negative,
@@ -640,7 +640,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-am"
                  :note "Reinisch1893 #244"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :am,
                           :polarity :Affirmative,
@@ -660,7 +660,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-am"
                  :note "Reinisch1893 #245"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :am,
                           :polarity :Affirmative,
@@ -680,7 +680,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-be_an"
                  :note "Reinisch1893 #244"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :beʔān,
                           :polarity :Affirmative,
@@ -700,7 +700,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-bis"
                  :note "Reinisch1893 #235"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Affirmative,
@@ -723,7 +723,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-dah"
                  :note "Reinisch1893 #244"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dah,
                           :polarity :Affirmative,
@@ -743,7 +743,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-dah"
                  :note "Reinisch1893 #245"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dah,
                           :polarity :Affirmative,
@@ -763,7 +763,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-dir"
                  :note "Reinisch1893 #235"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :Affirmative,
@@ -783,7 +783,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-dir"
                  :note "Reinisch1893 #239"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :Affirmative,
@@ -803,7 +803,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-dir"
                  :note "Reinisch1893 #240"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :Affirmative,
@@ -823,7 +823,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-fedig"
                  :note "Reinisch1893 #239"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fedig,
                           :polarity :Affirmative,
@@ -843,7 +843,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-gid"
                  :note "Reinisch1893 #235"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :gid,
                           :polarity :Affirmative,
@@ -866,7 +866,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-kan"
                  :note "Reinisch1893 #241"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :kan,
                           :polarity :Affirmative,
@@ -886,7 +886,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-kay"
                  :note "Reinisch1893 #241"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :kay,
                           :polarity :Affirmative,
@@ -906,7 +906,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-ram"
                  :note "Reinisch1893 #241"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :ram,
                           :polarity :Affirmative,
@@ -926,7 +926,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-t_a"
                  :note "Reinisch1893 #235"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :t_a,
                           :polarity :Affirmative,
@@ -946,7 +946,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-tʔab"
                  :note "Reinisch1893 #239"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :tʔab,
                           :polarity :Affirmative,
@@ -966,7 +966,7 @@
                  }
                 {:label "beja_Re-VPrefCCAffPresent-tʔaʔ"
                  :note "Reinisch1893 #240"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :tʔaʔ,
                           :polarity :Affirmative,
@@ -1016,7 +1016,7 @@
                  }
                 {:label "beja_Re-VPrefCCCAffPerfectCompSem"
                  :note "Reinisch1893 #225; compares Arb, Heb imperfect with Beniamer perfect"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -1034,7 +1034,7 @@
                  }
                 {:label "beja_Re-VPrefCCCAffPresent-debil"
                  :note "Reinisch1893 #236"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :debil,
                           :polarity :Affirmative,
@@ -1054,7 +1054,7 @@
                  }
                 {:label "beja_Re-VPrefCCCAffPresent-fedig"
                  :note "Reinisch1893 #240"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fedig,
                           :polarity :Affirmative,
@@ -1074,7 +1074,7 @@
                  }
                 {:label "beja_Re-VPrefCCCAffPresent-ketib"
                  :note "Reinisch1893 #236"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :ketib,
                           :polarity :Affirmative,
@@ -1094,7 +1094,7 @@
                  }
                 {:label "beja_Re-VPrefCCCAffPresent-sebir"
                  :note "Reinisch1893 #241"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :sebar,
                           :polarity :Affirmative,
@@ -1114,7 +1114,7 @@
                  }
                 {:label "beja_Re-VPrefCCCAffPresent-sedid"
                  :note "Reinisch1893 #236"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :sedid,
                           :polarity :Affirmative,
@@ -1134,7 +1134,7 @@
                  }
                 {:label "beja_Re-VPrefCCCAffPresent-siʔ"
                  :note "Reinisch1893 #241"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :siʔ,
                           :polarity :Affirmative,
@@ -1154,7 +1154,7 @@
                  }
                 {:label "beja_Re-VPrefCCCNegPresent-ketib"
                  :note "Reinisch1893 #246"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :ketib,
                           :polarity :Negative,
@@ -1174,7 +1174,7 @@
                  }
                 {:label "beja_Re-VPrefCCCNegPresent-serid"
                  :note "Reinisch1893 #246"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :serid,
                           :polarity :Negative,
@@ -1194,7 +1194,7 @@
                  }
                 {:label "beja_Re-VPrefCCNegPresent-dir"
                  :note "Reinisch1893 #246"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :Negative,
@@ -1215,7 +1215,7 @@
                 {:label "beja_Re-VPrefCCNegPresentAuxFay"
                  :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
             hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fay,
                           :polarity :Negative,
@@ -1234,7 +1234,7 @@
                  }
                 {:label "beja_Re-VPrefCCYAffPresent-kwesi"
                  :note "Reinisch1893 #237"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :kwesi,
                           :polarity :Affirmative,
@@ -1254,7 +1254,7 @@
                 {:label "beja_Re-VPrefCCYAffPresent-rekwi"
                  :note "Reinisch1893 #237. Reinisch notes plural of rekwi in
             Hadendawa:ne-rankwi,te-rankui-na,e-rankwi-na (Note,p. 63)"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :rekwi,
                           :polarity :Affirmative,
@@ -1273,7 +1273,7 @@
                  }
                 {:label "beja_Re-VPrefCCYAffPresent-sefi"
                  :note "Reinisch1893 #237"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :sefi,
                           :polarity :Affirmative,
@@ -1292,7 +1292,7 @@
                  }
                 {:label "beja_Re-VPrefCHCAffPresent-beʔan"
                  :note "Reinisch1893 #245"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :beʔan,
                           :polarity :Affirmative,
@@ -1312,7 +1312,7 @@
                  }
                 {:label "beja_Re-VPrefCHCAffPresent-gwʔad"
                  :note "Reinisch1893 #238"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :gwʔad,
                           :polarity :Affirmative,
@@ -1331,7 +1331,7 @@
                  }
                 {:label "beja_Re-VPrefCHCAffPresent-kehan"
                  :note "Reinisch1893 #238"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :kehan,
                           :polarity :Affirmative,
@@ -1350,7 +1350,7 @@
                  }
                 {:label "beja_Re-VPrefCHCAffPresent-sehag"
                  :note "Reinisch1893 #238"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :sehag,
                           :polarity :Affirmative,
@@ -1429,7 +1429,7 @@
                  }
                 {:label "beja_Re-VPrefCondPerfect-copAn"
                  :note "Reinisch1893 #306"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :COPULA,
                           :pos :Verb,
@@ -1446,7 +1446,7 @@
                  }
                 {:label "beja_Re-VPrefCondPresent-copAn"
                  :note "Reinisch1893 #306"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :COPULA,
                           :pos :Verb,
@@ -1464,7 +1464,7 @@
                 {:label "beja_Re-VPrefNegCCPerfect-auxFay"
                  :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
             hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fay,
                           :conjSubType :AuxFay,
@@ -1485,7 +1485,7 @@
                 {:label "beja_Re-VPrefNegCCPerfect-auxHay"
                  :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
             hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :conjSubType :AuxHay,
                           :lexeme :hay,
@@ -1506,7 +1506,7 @@
                 {:label "beja_Re-VPrefNegCCPerfect-auxKay"
                  :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
             hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :kay,
                           :polarity :Negative,
@@ -1526,7 +1526,7 @@
                 {:label "beja_Re-VPrefNegCCPresent-auxHay"
                  :note "Reinisch1893 #247. Durative pres/perf formed with MV[perf]+ Aux[pres/perf].
             hay/fay differ acc. to dialect. Neg. cop kāy,cf. #142."
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :conjSubType :AuxHay,
                           :lexeme :hay,
@@ -1546,7 +1546,7 @@
                  }
                 {:label "beja_Re-VPrefNegFuture1-dir"
                  :note "Reinisch1893 #249-51. Future tenses are formed with main verb participle derát-,fídgat- plus a conjugated auxiliary yi- aff,ka+are/rib neg.; [here with rib"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :NegativeEmphatic,
@@ -1564,7 +1564,7 @@
                  }
                 {:label "beja_Re-VPrefNegFuture2-dir"
                  :note "Reinisch1893 #252. Future2 formed with inflected aux di say and 1st pers. sg. plusperf of main verb,lit. I will kill they say. (Future2Var allows 1st pers pl plusperf of main verb for plural subjects.)"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :Negative,
@@ -1583,7 +1583,7 @@
                 {:label "beja_Re-VPrefNegFuture3-fedig"
                  :note "Reinisch1893 #253. Future3 is formed with infinitive of main verb and conjugated
             aux haruw want"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Prefix,
                           :lexeme :fedig,
                           :polarity :Negative,
@@ -1601,7 +1601,7 @@
                  }
                 {:label "beja_Re-VPrefNegImprtv-dir"
                  :note "Reinisch1893 #255-256"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :person :Person2,
@@ -1615,7 +1615,7 @@
                  }
                 {:label "beja_Re-VPrefNegImprtv-fedig"
                  :note "Reinisch1893 #255-256"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fedig,
                           :person :Person2,
@@ -1629,7 +1629,7 @@
                  }
                 {:label "beja_Re-VPrefNegImprtv-harid"
                  :note "Reinisch1893 #255-256"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :harid,
                           :person :Person2,
@@ -1643,7 +1643,7 @@
                  }
                 {:label "beja_Re-VPrefNegImprtv-kehan"
                  :note "Reinisch1893 #255-256"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :kehan,
                           :person :Person2,
@@ -1657,7 +1657,7 @@
                  }
                 {:label "beja_Re-VPrefNegImprtv-seni"
                  :note "Reinisch1893 #255-256"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :seni,
                           :person :Person2,
@@ -1671,7 +1671,7 @@
                  }
                 {:label "beja_Re-VPrefNegJussive-dir"
                  :note "Reinisch1893 #257-260"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :Negative,
@@ -1693,7 +1693,7 @@
                  }
                 {:label "beja_Re-VPrefNegJussive-fedig"
                  :note "Reinisch1893 #257-260"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fedig,
                           :polarity :Negative,
@@ -1715,7 +1715,7 @@
                  }
                 {:label "beja_Re-VPrefNegJussive-kiri"
                  :note "Reinisch1893 #257-260"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :kiri,
                           :polarity :Negative,
@@ -1737,7 +1737,7 @@
                  }
                 {:label "beja_Re-VPrefNegOptative-dir"
                  :note "Reinisch1893 #263-264"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dir,
                           :polarity :Negative,
@@ -1755,7 +1755,7 @@
                  }
                 {:label "beja_Re-VPrefNegOptative-fedig"
                  :note "Reinisch1893 #263-264"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :fedig,
                           :polarity :Negative,
@@ -1773,7 +1773,7 @@
                  }
                 {:label "beja_Re-VPrefNegOptative-kiri"
                  :note "Reinisch1893 #263-264"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :kiri,
                           :polarity :Negative,
@@ -1791,7 +1791,7 @@
                  }
                 {:label "beja_Re-VPrefNegPerf-rib"
                  :note "Reinisch1893 #249-51. Future tenses are formed with main verb participle derát-,fídgat- plus a conjugated auxiliary yi- aff,ka+are/rib neg.; [here with rib]"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :rib,
                           :polarity :Negative,
@@ -1839,7 +1839,7 @@
                  }
                 {:label "beja_Re-VPrefPerfectCopAn"
                  :note "Reinisch1893 #306"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :COPULA,
                           :pos :Verb,
@@ -1884,7 +1884,7 @@
                  }
                 {:label "beja_Re-VPrefPresent-copAn"
                  :note "Reinisch1893 #306"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :COPULA,
                           :pos :Verb,
@@ -1959,7 +1959,7 @@
                  }
                 {:label "beja_Re-VSuffAffCond-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Affirmative,
@@ -1977,7 +1977,7 @@
                  }
                 {:label "beja_Re-VSuffAffFuture1-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :number :Singular,
@@ -1991,7 +1991,7 @@
                  }
                 {:label "beja_Re-VSuffAffFuture2-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :number :Singular,
@@ -2010,7 +2010,7 @@
                  }
                 {:label "beja_Re-VSuffAffFuture3-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :number :Singular,
@@ -2024,7 +2024,7 @@
                  }
                 {:label "beja_Re-VSuffAffImprtv-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :person :Person2,
@@ -2038,7 +2038,7 @@
                  }
                 {:label "beja_Re-VSuffAffJussive-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Affirmative,
@@ -2056,7 +2056,7 @@
                  }
                 {:label "beja_Re-VSuffAffPerfect-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Affirmative,
@@ -2074,7 +2074,7 @@
                  }
                 {:label "beja_Re-VSuffAffPerfectDur-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :number :Singular,
@@ -2088,7 +2088,7 @@
                  }
                 {:label "beja_Re-VSuffAffPerfectRel-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Affirmative,
@@ -2106,7 +2106,7 @@
                  }
                 {:label "beja_Re-VSuffAffPluperfect-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Affirmative,
@@ -2124,7 +2124,7 @@
                  }
                 {:label "beja_Re-VSuffAffPresent-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Affirmative,
@@ -2142,7 +2142,7 @@
                  }
                 {:label "beja_Re-VSuffAffPresentDur-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :number :Singular,
@@ -2156,7 +2156,7 @@
                  }
                 {:label "beja_Re-VSuffAffPresentRel-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Affirmative,
@@ -2207,7 +2207,7 @@
                  }
                 {:label "beja_Re-VSuffNegFuture1-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :number :Singular,
@@ -2221,7 +2221,7 @@
                  }
                 {:label "beja_Re-VSuffNegFuture2-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :number :Singular,
@@ -2240,7 +2240,7 @@
                  }
                 {:label "beja_Re-VSuffNegFuture3-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :FiniteCompound
+                 :common {:vmorphClass :FiniteCompound
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :number :Singular,
@@ -2254,7 +2254,7 @@
                  }
                 {:label "beja_Re-VSuffNegImprtv-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :person :Person2,
@@ -2268,7 +2268,7 @@
                  }
                 {:label "beja_Re-VSuffNegJussive-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Negative,
@@ -2290,7 +2290,7 @@
                  }
                 {:label "beja_Re-VSuffNegPerfect-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Negative,
@@ -2308,7 +2308,7 @@
                  }
                 {:label "beja_Re-VSuffNegPerfectDur-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :number :Singular,
@@ -2322,7 +2322,7 @@
                  }
                 {:label "beja_Re-VSuffNegPerfectRel-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Negative,
@@ -2340,7 +2340,7 @@
                  }
                 {:label "beja_Re-VSuffNegPresent-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Negative,
@@ -2358,7 +2358,7 @@
                  }
                 {:label "beja_Re-VSuffNegPresentDur-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :number :Singular,
@@ -2372,7 +2372,7 @@
                  }
                 {:label "beja_Re-VSuffNegPresentRel-dur"
                  :note "Reinisch1893 #326-340"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :dur,
                           :polarity :Negative,
