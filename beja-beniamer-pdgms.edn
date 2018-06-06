@@ -6,31 +6,36 @@
  :datasourceNotes "Reinisch uses the terms 'perfect' and 'plusquamperfect' for what are here termed 'Past' and 'Aorist'"
  :geodemoURL "http://www.ethnologue.com/language/bej"
  :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. One of the Southern-most representative of Beja is documented here, that of the Beni-Amer in Barka, in what is now Eritrea, studied by Leo Reinisch (1893) in what is, along with Almkvist's study of the Bishari, one of the earliest monographs dedicated to a variety of Beja."
-:schemata {:case [:Object :Subject],
-           :complang [:Arabic :Hebrew],
-           :conjClass [:Prefix :Suffix],
-           :conjSubType [:AuxFay :AuxHay],
-           :derivedStem [:Base :BaseIntns :CausalIntransitive :Causative :Collaborative :Cooperative :M :M1 :M2 :MS1 :MS2 :Passive :Reciprocal :Reflexive :S :S1 :S2 :SM],
-           :derivedStemAug [:Intensive :Intransitive :Simple],
-           :genHead [:H_Fem :H_Masc],
-           :gender [:Common :Fem :Masc],
-           :numHead [:H_Plural :H_Singular :Singular],
-           :number [:Plural :Plural2 :Singular],
-           :person [:Person1 :Person2 :Person3],
-           :polarity [:Affirmative :Negative :NegativeEmphatic],
-           :pos [:Pronoun :Verb],
-           :proClass [:Independent :IndependentPossessive :ObjectSuffix :PossCop :PossSuff],
-           :rootClass [:CC :CCC :CCY :CHC :CaC :CeC],
-           :stemClass [:C_final :V_final :_NA],
-           :tam [:Aorist :Conditional :ConditionalPerfect :ConditionalPresent :Future1 :Future2 :Future2Var :Future3 :Imperative :Imperfect :Jussive :Optative :Past :PastDur :PastRel :Present :PresentDur :PresentRel],
-           :vmorphClass [:Finite  :FiniteCompound :COMPSEM :DERVSTEMAORIST :DERVSTEMCAUS :DERVSTEMCOLL :DERVSTEMPASS :DERVSTEMRECIP :DERVSTEMREFL :DERVSTEMSUFF :PrefVersusSuff :TENSESTEMAORIST]
-           }
+:schemata {:lexeme [:COPULA  :Had :Hasis :Hat :abab :abik :adil :afid :am :amit :baden :bal :baski :beHas :beHin :bedah :bedin :berir :beʔan :beʔān :bis :dab :dabar :dah :dar :deHir :debil :debir :dedir :delib :derir :di :dib :dif :dih :dir :dur :fay :fayd :fāyd :fedig :felaH :fenin :feraH :ferik :feyak :gas :ged :gedah :gelad :gerib :gid :gig :guH :guaH :guasir :gŭhar :gwʔad :hadah :hakab :hakaf :hanig :har :harid :hay :herid :is :kan :kay :kehan :kesis :keti :ketib :kiloy :kiri :ktbArb :ktbHeb :kuay :kut :kutaH :kwesi :lau :lemid :luw :man :mekir :men :meša :min :nau :negil :nekis :nika :ram :regig :rekwi :rib :saH :san :sawi :seHag :sebar :sebib :sebir :sedid :sefi :sehag :selif :selit :semit :seni :serah :serid :siʔ :sugud :t_a :taH :tab :tib :tʔab :tʔaʔ :yak :yewas :yi],
+ :case [:Object :Subject],
+ :complang [:Arabic :Hebrew],
+ :conjClass [:Prefix :Suffix],
+ :conjSubType [:AuxFay :AuxHay],
+ :derivedStem [:Base :BaseIntns :CausalIntransitive :Causative :Collaborative :Cooperative :M :M1 :M2 :MS1 :MS2 :Passive :Reciprocal :Reflexive :S :S1 :S2 :SM],
+ :derivedStemAug [:Intensive :Intransitive :Simple],
+ :genHead [:H_Fem :H_Masc],
+ :gender [:Common :Fem :Masc],
+ :numHead [:H_Plural :H_Singular :Singular],
+ :number [:Plural :Plural2 :Singular],
+ :person [:Person1 :Person2 :Person3],
+ :pmorphClass [:ProMorph],
+ :polarity [:Affirmative :Negative :NegativeEmphatic],
+ :pos [:Pronoun :Verb],
+ :proClass [:Independent :IndependentPossessive :ObjectSuffix :PossCop :PossSuff],
+ :rootClass [:CC :CCC :CCY :CHC :CaC :CeC],
+ :stemClass [:C_final :V_final :_NA],
+ :tam [:Aorist :Conditional :ConditionalPerfect :ConditionalPresent :Future1 :Future2 :Future2Var :Future3 :Imperative :Imperfect :Jussive :Optative :Past :PastDur :PastRel :Present :PresentDur :PresentRel],
+ :vmorphClass [:COMPSEM :DERVSTEMAORIST :DERVSTEMCAUS :DERVSTEMCOLL :DERVSTEMPASS :DERVSTEMRECIP :DERVSTEMREFL :DERVSTEMSUFF :Finite :FiniteCompound :PrefVersusSuff :TENSESTEMAORIST]
+ }
  :pclass {:pngClass [:person :number :gender :genHead :numHead],
           :synsemClass [:case :derivedStem :derivedStemAug :polarity :pos :proClass :tam],
           :inflClass [:conjClass :conjSubType :rootClass],
           :otherClass []}
  :lexemes{:baski {:gloss "", :lemma "baskī-t"},
           :hadah {:gloss "[x]", :lemma "[y]"},
+          :selif {:gloss "[x]", :lemma "[y]"},
+          :beʔan {:gloss "[x]", :lemma "[y]"},
+          :t_a {:gloss "[x]", :lemma "[y]"},
           :ktbHeb {:gloss "write", :lemma "[y]"},
           :am {:gloss "swell", :lemma "ʔām"},
           :tʔab {:gloss "[x]", :lemma "[y]"},
@@ -2390,7 +2395,7 @@
                  }
                 {:label "beja_Re-PInd"
                  :note "Reinisch1893 #157,159"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Independent}
                  :terms [[:case :number :person :gender :token],
                          [:Object :Singular :Person1 :Common "ané̄-b "],
@@ -2416,7 +2421,7 @@
                  }
                 {:label "beja_Re-PIndPoss"
                  :note "Reinisch1893 #161"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :IndependentPossessive}
                  :terms [[:genHead :numHead :number :person :gender :token],
                          [:H_Fem :H_Plural :Singular :Person1 :Common "aní"],
@@ -2462,7 +2467,7 @@
                  }
                 {:label "beja_Re-PObjSuff"
                  :note "Reinisch1893 #174"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :ObjectSuffix}
                  :terms [[:number :person :gender :token],
                          [:Singular :Person1 :Masc "-hé̄ba"],
